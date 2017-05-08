@@ -76,4 +76,4 @@ java -Djava.library.path=/usr/lib/jni/ -cp examples-all-0.1.0.jar:/usr/share/Ope
 2017-01-07 19:23:02 [main] INFO  opencv.HelloWorldCV - m = [1, 0, 0;
   0, 1, 0;
   0, 0, 1]
-``  
+```  
