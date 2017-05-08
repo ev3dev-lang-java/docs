@@ -57,7 +57,7 @@ deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main
 deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
-``
+```
 
 ## 3 Install OpenCV for Java
 
