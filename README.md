@@ -21,3 +21,7 @@
   - Follow Line robot using OpenCV
   - Detect a Human Face with OpenCV
   - Detect Cats with OpenCV
+  
+```
+gradle init --type java-library
+```
