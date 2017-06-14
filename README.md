@@ -3,12 +3,11 @@
 ## Index
 
 - Theory
-  - [Introduction](introduction.md)
+  - [Introduction](./introduction/index.md)
   - [Getting Started](./getting_started/index.md)
-  - [My first robot](myFirstRobot.md)
-  - [The robot architecture](architecture.md)
-  - [Motors](motors.md)
-  - [Sensors](sensors.md)
+  - [The robot architecture](./architecture/index.md)
+  - [Actuators](./actuators/index.md)
+  - [Sensors](./sensors/index.md)
 - Exercises
   - [Exercises with Java](exercises_java.md)
   - [Exercises with Actuators](exercises_actuators.md)

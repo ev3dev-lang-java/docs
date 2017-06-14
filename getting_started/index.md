@@ -2,26 +2,16 @@
 
 ## Introduction
 
-## Step 1: Install EV3Dev
+This document will help in you in the process to install all requirements to develop 
+software for Java on your brick.
 
-### EV3 Brick
+This document has 2 parts a guide to install all requirements on your Laptop and the notes
+ to install everything on your brick.
 
-### BrickPi+
+## Getting started on your laptop
 
-### PiStorms
+[Read more](./laptop.md)
 
-## Step 2: Verify installation
+## Getting started on your Brick
 
-## Step 3: Install Java JVM, Build Systems & Native libraries
-
-## Step 4: Hello World
-
-``` java
-pubic class HelloWorld {
-
-    public static void main() {
-        System.out.println("Hello, World");
-    }
-
-}
-```
+[Read more](./brick.md)
