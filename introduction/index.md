@@ -71,14 +71,17 @@ RAM: 1GB LPDDR2 (900 MHz)
 * Logging support based on [SLF4J](https://www.slf4j.org/)
 * Centralized logs with [Kibana](https://www.elastic.co/products/kibana)
 
-**Platform features**
+**Platforms supported**
 
-* Support for EV3 Brick, PiStorms v1/v2, BrickPi+ & BrickPi 3
+* EV3 Brick, 
+* PiStorms v2, 
+* BrickPi+ 
+* BrickPi 3
 
 **Lego Mindstorms features**
 
-* Regulated Motor Support
-* Unregulated Motor Support
+* Regulated Motor Support (Large EV3 Motors, Medium EV3 Motors, NXT Motors)
+* Unregulated Motor Support (RCX Motors)
 * Sensor Support (EV3 sensors)
 * Sounds Support
 * EV3 LCD Support

@@ -10,8 +10,8 @@ This document has 2 parts a guide to install all requirements on your Laptop and
 
 ## Getting started on your laptop
 
-[Read more](./laptop.md)
+[Read more](laptop.md)
 
 ## Getting started on your Brick
 
-[Read more](./brick.md)
+[Read more](brick.md)

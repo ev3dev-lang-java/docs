@@ -28,9 +28,9 @@ In the market, Lego Mindstorms for EV3 has 2 kits in the market:
 **31313**
 The set includes the following exteroceptor sensors:
 
-1. Infrared sensor x1
-2. Touch sensor x1
-3. Light sensor x1 
+1. [Infrared sensor](ev3_ir_sensor.md) x1
+2. [Touch sensor](ev3_touch_sensor.md) x1
+3. [Light sensor](ev3_light_sensor.md) x1 
 
 ![](./31313.png)
 
@@ -38,12 +38,22 @@ The set includes the following exteroceptor sensors:
 The set includes the following exteroceptor sensors:
 
 1. Ultrasonic sensor x1
-2. Touch sensor x2
-3. Light sensor x1
-4. Gyro sensor x1
+2. [Touch sensor](ev3_touch_sensor.md) x2
+3. [Light sensor](ev3_light_sensor.md) x1
+4. [Gyro sensor](ev3_gyro_sensor.md) x1
 
 ![](./45544.png)
 
 Besides, in the market exist others exteroceptor sensors from Lego education, Mindsensors, Dexter Laboratories 
 and HiTechnics.
 
+## Proprioceptors sensors in EV3
+
+### Introduction
+
+Once you have discovered how to use EV3 sensors to get data from the world, it is necessary to discover other kind 
+of sensors used to measure internal state of your own robot.
+
+1. [Gyro sensor](ev3_gyro_sensor.md) x1
+2. [Lego Large Motor state](ev3_large_motor.md)
+3. Battery
