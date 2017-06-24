@@ -1,0 +1,30 @@
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
+    }
+}
+
+apply plugin: 'org.asciidoctor.convert'
+
+asciidoctor {
+    logDocuments = true
+    sourceDir = file('src/main/asciidoc')
+    sources {
+        include '**/*.adoc'
+    }
+    resources {
+        from(sourceDir) {
+            include '**/*.png'
+            include '**/*.java'
+        }
+        into '.'
+    }
+    outputDir = file('build/docs')
+}
+
+defaultTasks 'asciidoctor'

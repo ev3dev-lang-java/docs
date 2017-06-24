@@ -1,0 +1,27 @@
+[[compatibility-table]]
+Compatibility table
+~~~~~~~~~~~~~~~~~~~
+
+[cols=",,,",options="header",]
+|========================================
+|Element |EV3Brick |PiStorms v2 |BrickPi+
+|Voltage: |Yes |Yes |Yes
+|Current: |Yes |- |-
+|Regulated Motors: |Yes |Yes |Yes
+|Unregulated Motors: |Yes |- |-
+|Rotate methods: |Yes |- |-
+|Speak |Yes |- |-
+|Light Sensor |Yes |Yes |Yes
+|Touch Sensor |Yes |Yes |Yes
+|Gyro Sensor Angle |Yes |- |Yes
+|Gyro Sensor Angle & Rate |Yes |- |-
+|IR Sensor Distance |Yes |- |Yes
+|IR Beacon |Yes |- |-
+|IR Remote |Yes |- |-
+|US Sensor Distance |Yes |- |Yes
+|========================================
+
+https://www.cs.cmu.edu/~chuck/robotpg/robofaq/9.html
+http://www.yourarticlelibrary.com/robots/robots-5-important-components-of-robots/5692/
+http://sciencing.com/main-parts-robot-7403157.html
+http://www.mind.ilstu.edu/curriculum/medical_robotics/parts_of_robots.php

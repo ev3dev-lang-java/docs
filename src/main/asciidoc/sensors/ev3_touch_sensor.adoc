@@ -1,0 +1,24 @@
+= EV3 Touch sensor
+
+The analog EV3 Touch Sensor is a simple but exceptionally precise tool that detects when its front button is pressed or
+ released and is able to count single and multiple presses.
+
+image:./ev3_touch_sensor.png[image]
+
+*How to use the sensor*
+Example 1: Show the state from a Touch sensor in the EV3 display
+
+image:./ev3_touch_sensor_example1.png[image]
+
+Example 2: Example to show how to use a IF statement using a Touch Sensor
+
+image:./ev3_touch_sensor_example2.png[image]
+
+Example 3: Show the raw value from a Sensor port in the EV3 display
+
+image:./ev3_touch_sensor_example3.png[image]
+
+[source,java]
+----
+include::./TouchSensorDemo.java[]
+----

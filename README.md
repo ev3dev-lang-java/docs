@@ -1,21 +1,12 @@
 # ev3dev-lang-java / docs
 
-## Index
+Documentation about the project.
 
-- About
-  - [Introduction](./introduction/index.md)
-- [Getting Started](./getting_started/index.md) 
-- [Compatibility](./compatibility/index.md) 
-- Fundamentals
-  - [The robot architecture](./architecture/index.md)
-  - [Actuators](./actuators/index.md)
-  - [Sensors](./sensors/index.md)
+To generate in local the documentation, execute the following command
 
-**Note:** In the future, docs will be updaded with the following sections:
-
-- Local navigation
-- Computer Vision
-- ROS
+```
+./gradlew asciidoctor
+```
 
 
 
