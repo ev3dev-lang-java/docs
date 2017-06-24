@@ -56,6 +56,6 @@ and HiTechnics.
 Once you have discovered how to use EV3 sensors to get data from the world, it is necessary to discover other kind
 of sensors used to measure internal state of your own robot.
 
-. link:ev3_gyro_sensor.md[Gyro sensor] x1
-. link:ev3_large_motor.md[Lego Large Motor state]
+. link:ev3_gyro_sensor.html[Gyro sensor] x1
+. link:ev3_large_motor.html[Lego Large Motor state]
 . Battery
