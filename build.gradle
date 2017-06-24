@@ -1,18 +1,20 @@
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
-    }
+plugins {
+    id 'org.asciidoctor.convert' version '1.5.3'
+    id 'org.kordamp.gradle.livereload' version '0.2.1'
 }
 
 apply plugin: 'org.asciidoctor.convert'
+apply plugin: 'org.kordamp.gradle.livereload'
 
 asciidoctorj {
-    version = '1.5.3'
+    version = '1.5.5'
+}
+
+//Wrapper
+task wrapper(type: Wrapper) {
+    description = 'Generates gradlew[.bat] scripts'
+    gradleVersion = '3.5'
 }
 
 asciidoctor {
@@ -41,3 +43,7 @@ asciidoctor {
 }
 
 defaultTasks 'asciidoctor'
+
+liveReload {
+    docRoot asciidoctor.outputDir.canonicalPath
+}
