@@ -1,17 +1,14 @@
-[[ev3dev-lang-java-docs]]
-ev3dev-lang-java / docs
------------------------
+# ev3dev-lang-java / docs
 
-[[index]]
-Index
-~~~~~
+## About
 
-* About
-** link:./introduction/index.html[Introduction]
-** link:./getting_started/index.html[Getting Started]
-** link:./compatibility/index.html[Compatibility]
-* Fundamentals
-** link:./introduction/whatIsARobot.html[What is a robot?]
-** link:./architecture/index.html[The robot architecture]
-** link:./actuators/index.html[Actuators]
-** link:./sensors/index.html[Sensors]
+* link:./introduction/index.html[Introduction]
+* link:./getting_started/index.html[Getting Started]
+* link:./compatibility/index.html[Compatibility]
+
+## Fundamentals of Robotics
+
+* link:./introduction/whatIsARobot.html[What is a robot?]
+* link:./architecture/index.html[The robot architecture]
+* link:./actuators/index.html[Actuators]
+* link:./sensors/index.html[Sensors]
