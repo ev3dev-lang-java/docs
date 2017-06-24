@@ -3,8 +3,11 @@
 ## About
 
 * link:./introduction/index.html[Introduction]
-* link:./getting_started/index.html[Getting Started]
 * link:./compatibility/index.html[Compatibility]
+
+## Getting Started
+
+* link:./getting_started/index.html[Prerequisites]
 
 ## Fundamentals of Robotics
 
