@@ -1,4 +1,4 @@
-# EV3Dev-java / docs
+# EV3Dev-Java / docs
 
 ## About
 
