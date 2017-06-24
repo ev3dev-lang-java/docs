@@ -20,6 +20,7 @@ asciidoctor {
     resources {
         from(sourceDir) {
             include '**/*.png'
+            include '**/*.jpg'
             include '**/*.java'
         }
         into '.'

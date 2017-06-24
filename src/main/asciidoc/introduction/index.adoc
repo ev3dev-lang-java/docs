@@ -27,7 +27,7 @@ that Linux Distro? The answer is `EV3Dev-lang-java`. The project, takes
 the good things of both worlds: EV3Dev with the complete linux
 experience and LeJOS with the rich local navigation stack.
 
-image:https://raw.githubusercontent.com/jabrena/ev3dev-lang-java/master/docs/images/theThreeAmigos.jpg[ScreenShot]
+image:./theThreeAmigos.jpg[ScreenShot]
 
 *What libraries contains EV3Dev-lang-java?*
 
