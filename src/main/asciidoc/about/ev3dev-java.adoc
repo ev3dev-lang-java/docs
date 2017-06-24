@@ -1,0 +1,161 @@
+# What is EV3Dev-java?
+
+A Java project to build Software for Robots using hardware supported by EV3Dev & the LeJOS way.
+
+## 1. Introduction
+
+Lego Mindstorms ecosystem is
+`a fantastic educational way to learn Java, Linux and Robotics` to develop your creativity using your favourite Bricks.
+In the the third generation of the product link:https://www.lego.com/en-us/mindstorms[Lego Mindstorms EV3],
+others companies like link:https://www.dexterindustries.com/[Dexter Industries]
+& link:http://www.mindsensors.com/[Mindsensors] has released boards combining the power of
+link:https://www.raspberrypi.org/[Raspberry Pi 3] with the usage of Sensors & Actuators from Lego Mindstorms ecosystem.
+The result is very healthy for the Community but... some questions appear in the air:
+
+- How to manage the hardware in an easy way?
+- How to continue using Java with all boards?
+- What happen with amazing LeJOS libraries about `local-navigation` in this context?
+
+The answer is this project, **EV3Dev-java**.
+
+image:./theThreeAmigos.jpg[ScreenShot]
+
+## 2. EV3Dev-java Subprojects
+
+`EV3Dev-java` has been designed with the modularity in mind from the beginning.
+
+The project contains the following Java libraries/scripts:
+
+* https://github.com/ev3dev-lang-java/ev3dev-lang-java[EV3Dev-lang-java]:
+Low level interation library with EV3Dev
+* https://github.com/ev3dev-lang-java/lejos-commons[lejos-commons]:
+LeJOS interfaces & utilities
+* https://github.com/ev3dev-lang-java/lejos-navigation[lejos-navigation]:
+LeJOS navigation stack
+* https://github.com/ev3dev-lang-java/RPLidar4J[RPLidar4J]: RPLidar A1
+support
+* https://github.com/ev3dev-lang-java/batteryMonitor[Battery Monitor]: A
+battery monitor to protect your hardware against low battery levels
+* https://github.com/ev3dev-lang-java/installer[Installer]: A set of
+Bash scripts to automate some operations with your brick
+
+## 3. Competitive advantages
+
+This project has the following competitive advantages:
+
+* Usage of the same Java libraries for multiple bricks (EV3 Brick, BrickPi 3, BrickPi+ & PiStorms)
+* Usage of USB Connections for Arduino
+* Usage of complex Devices like LIDARs, Webcams or Advanced IMUs with USB.
+* Usage of a Complete Linux
+* Usage of `LeJOS` libraries
+
+If you analyze the hardware, any EV3 Brick uses a
+`SoC: Sitara Processor AM1808` (from year 2010) to manage Sensors &
+Actuators but now with the usage of a BrickPi/PiStorms unit, it is
+possible to use the power of a Raspberry Pi 3 increasing the
+possibilities to develop complex projects which require por
+Computational consumption.
+
+*2010 Chip included on EV3 Brick:*
+
+....
+SoC: Sitara Processor AM1808
+CPU: ARM9 300MHz
+RAM: 16KB of Instruction Cache, 16KB of Data Cache ,8KB of RAM (Vector Table), 64KB of ROM
+....
+
+*2016 Chip included on Raspberry Pi 3:*
+
+....
+SoC: Broadcom BCM2837
+CPU: 4× ARM Cortex-A53, 1.2GHz
+RAM: 1GB LPDDR2 (900 MHz)
+....
+
+## 4. Features out of the box
+
+*Java features*
+
+* Automatic installation of Oracle Java JDK 8 for Brickpi+/PiStorms +
+Raspberry Pi 3
+* Partial installation of Oracle Java JRE 8 for EV3 Brick
+* OpenJDK Java 9 EA support for Brickpi+/PiStorms + Raspberry Pi 3
+* Java profiling tools Support
+(http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html[Oracle
+mission control] &
+http://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html[JConsole])
+* Logging support based on https://www.slf4j.org/[SLF4J]
+* Centralized logs with https://www.elastic.co/products/kibana[Kibana]
+
+*Platforms supported*
+
+* EV3 Brick,
+* BrickPi 3
+* BrickPi+
+* PiStorms v2,
+
+*Lego Mindstorms features*
+
+* Regulated Motor Support (Large EV3 Motors, Medium EV3 Motors, NXT
+Motors)
+* Unregulated Motor Support (RCX Motors)
+* Sensor Support (EV3 sensors)
+* Sounds Support
+* EV3 LCD Support
+
+*Robotics*
+
+* Automatic installation of http://opencv.org/[OpenCV]
+* http://espeak.sourceforge.net/[eSpeak] TTS (Text to speech) Support
+* http://sourceforge.net/p/lejos/wiki/Sensor%20Framework/[LeJOS Sensor
+filter] Support
+* https://github.com/ev3dev-lang-java/lejos-navigation[LeJOS local
+navigation stack] Support
+* https://github.com/ev3dev-lang-java/RPLidar4J[RPLidar A1] (2D Lidar)
+Support
+
+
+## 5. Timeline of the project
+
+In 2015, EV3Dev is born to offer a solution to install a complete
+link:https://www.debian.org[Linux Debian Operating System] on
+link:https://www.lego.com/en-us/mindstorms[EV3 Brick],
+link:https://www.dexterindustries.com/brickpi/[BrickPi Series] &
+link:http://www.mindsensors.com/content/78-pistorms-lego-interface[PiStorms Series].
+The project provides an agnostic Linux interface to unify the way to interact with Mindstorms Hardware too.
+
+At the end of the same year, `EV3Dev-lang-java` is born with the idea to continue developing Java robots
+on Lego Mindstorms and providing a port of `LeJOS` libraries like the `local-navigation` stack.
+
+In 2017 Q3, the project will be renamed as `EV3Dev-java` to be shorted and to not generate confusion with the usage
+of link:https://github.com/ev3dev/ev3dev-lang[EV3Dev binding features].
+
+## 6. Evolution of Java on Lego Mindstorms ecosystem
+
+LeJOS project is the unique Open Source project present on every Lego Mindstorms generations of the product.
+In any generation, the project had to find a solution for the following layers:
+
+* Runtime
+* JVM
+* Robotics libraries
+
+This premise was solved in every Mindstorms generation:
+
+[options="header,footer"]
+|=======================
+|Product             | RCX               | NXT                    | EV3
+|Runtime             | Custom firmware   | Custom firmware        | Busybox + Native libraries
+|JVM                 | Custom JVM        | Custom JVM             | Oracle JRE 8
+|Robotics libraries  | Initial libraries | local-navigation-stack | ~
+|=======================
+
+but now in 2017, any Java developer could have issues with the following scenarios:
+
+- The usage of LeJOS objects on BrickPi3/PiStormsV2
+- The USB connection with any Arduino board
+- Make a map with a LIDAR like RPLidar A2
+- Execute a linux command like `screen` to maintain a `ssh` session although you close the laptop
+- Install ROS on your Brick
+- Interact with other programming languages
+
+So, to solve this kind of projects appear `EV3Dev-java`.
