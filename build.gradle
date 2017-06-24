@@ -11,6 +11,10 @@ buildscript {
 
 apply plugin: 'org.asciidoctor.convert'
 
+asciidoctorj {
+    version = '1.5.3'
+}
+
 asciidoctor {
     logDocuments = true
     sourceDir = file('src/main/asciidoc')
@@ -25,6 +29,12 @@ asciidoctor {
         }
         into '.'
     }
+    attributes  'icons': 'font',
+                'toc': 'left',
+                'toc-title':'Table of Contents',
+                'encoding': 'utf-8',
+                'linkcss': true,
+                'source-highlighter': 'highlightjs'
     outputDir = file('build/docs')
 }
 
