@@ -1,8 +1,8 @@
-= Getting Started on your computer
+# Getting Started on your computer
 
-== 1. Install/Update your development environment
+## 1. Install/Update your development environment
 
-=== 1.1 Install Java
+### 1.1 Install Java
 
 To begin any Java development, you need to be installed Java. 
 
@@ -17,7 +17,7 @@ brew install Caskroom/cask/java
 
 Further information about Java: https://www.java.com/es/about/whatis_java.jsp[https://www.java.com/es/about/whatis_java.jsp]
 
-=== 1.2 Install Maven/Gradle
+### 1.2 Install Maven/Gradle
 
 *OSX:*
 
@@ -31,18 +31,33 @@ Further information about Maven &amp; Gradle:
 https://maven.apache.org/[https://maven.apache.org/]
 https://gradle.org/[https://gradle.org/]
 
-=== 1.3 Install a Git Client
+### 1.3 Install a Git Client
 
 Install a visual Git Client to download this repository.
 https://www.sourcetreeapp.com/[https://www.sourcetreeapp.com/]
 
-=== 1.4 Install a Java IDE
+### 1.4 Install a Java IDE
 
-Install a Java IDE to use this repository with examples about
-ev3dev-lang-java.
+Install a Java IDE to develop Java Software
 https://www.jetbrains.com/idea/[https://www.jetbrains.com/idea/]
 
-=== 1.5 Download the repository on your computer
+## 2. Test your local environment
 
-Using SourceTree, try to donwload the repository on local. The address
-about the repository is: https://github.com/ev3dev-lang-java/ev3dev-lang-java.git[https://github.com/ev3dev-lang-java/ev3dev-lang-java.git]
+Once, you have installed everything, it is necessary to verify that everything goes well.
+
+Create a file with the name of HelloWorld.java and copy and paste on it the following content:
+
+[source,java]
+----
+include::./HelloWorld.java[]
+----
+
+Later, open a terminal and type:
+
+``` java
+javac HelloWorld.java
+java HelloWorld
+```
+
+You should read: `HelloWorld` if the answer is **Yes**, your installation process on your
+personal computer has finished.

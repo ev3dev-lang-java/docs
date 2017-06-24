@@ -1,25 +1,18 @@
 # EV3Dev-Java / docs
 
-## About the project
-
-Learn details about the project itself.
-
-* link:./about/ev3dev-java.html[What is EV3Dev-java?]
-* link:./about/ev3dev-compatibility.html[Compatibility table]
-
 ## Getting Started
 
-Learn how to install the minimum Java infrastructure in your local computer
-and the required requisites on your brick to develop Software for robots.
-
-* link:./getting_started/laptop.html[Laptop]
-* link:./getting_started/brick.html[Brick]
+* link:./getting_started/laptop.html[Getting started with your Laptop]
+* link:./getting_started/brick.html[Getting started with your Brick]
 
 ## Fundamentals of Robotics
-
-Learn the basic concepts about Robotics.
 
 * link:./introduction/whatIsARobot.html[What is a robot?]
 * link:./architecture/index.html[The robot architecture]
 * link:./actuators/index.html[Actuators]
 * link:./sensors/index.html[Sensors]
+
+## About the project
+
+* link:./about/ev3dev-java.html[What is EV3Dev-java?]
+* link:./about/ev3dev-compatibility.html[Compatibility table]
