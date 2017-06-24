@@ -7,8 +7,8 @@
 
 ## Fundamentals of Robotics
 
-* link:./introduction/whatIsARobot.html[What is a robot?]
-* link:./architecture/index.html[The robot architecture]
+* link:./fundamentals/whatIsARobot.html[What is a robot?]
+* link:./fundamentals/architecture.html[The robot architecture]
 * link:./actuators/index.html[Actuators]
 * link:./sensors/index.html[Sensors]
 
