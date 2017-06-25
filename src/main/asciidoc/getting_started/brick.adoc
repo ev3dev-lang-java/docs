@@ -19,11 +19,11 @@ sudo apt-get dist-upgrade
 sudo reboot
 ```
 
-## 2. Install Java on your brick
+## Install Java on your brick
 
 For this step exists 2 paths. One path is for EV3 Brick and another path for BrickPi/PiStorms users.
 
-### 2.1 EV3 Brick
+### EV3 Brick
 
 The EV3 Brick was designed with a SOC based on [ARM EABI](https://wiki.debian.org/ArmEabiPort) 
 and the best JVM option for that hardware architecture is the Oracle JRE 8 to install in the brick but, it is not possible to install directly in the brick
@@ -62,7 +62,7 @@ java -version
 
 Now, you have Java on your EV3 Brick
 
-### 2.2 BrickPi 3 / BrickPi+ / PiStorms
+### BrickPi 3 / BrickPi+ / PiStorms
 
 Using the installer, it is possible to automate everything:
 
@@ -78,11 +78,11 @@ sudo ./installer.sh help
 sudo ./installer.sh
 ```
 
-## 3. Create your first Project and deploy on your Brick
+## Create your first Project and deploy on your Brick
 
 Once you have the required infrastructure on your Brick, it is possible to experiment with the libraries in some ways:
 
-### 3.1 Using a Gradle template project
+### Using a Gradle template project
 
 If you like, you can experiment with the project, using the following project template:
 
@@ -112,7 +112,7 @@ Besides, exist a task to provide access to a Profiling tool if you execute:
 ./gradlew deployAndProfilingRun
 ```
 
-### 3.2 Create a project from scratch
+### Create a project from scratch
 
 Another alternative is the creation of a project from Scratch using Maven/Gradle.
 

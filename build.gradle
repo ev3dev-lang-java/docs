@@ -18,7 +18,9 @@ task wrapper(type: Wrapper) {
 }
 
 asciidoctor {
+    description = project.description
     logDocuments = true
+    backends 'html5'
     sourceDir = file('src/main/asciidoc')
     sources {
         include '**/*.adoc'
@@ -32,11 +34,18 @@ asciidoctor {
         into '.'
     }
     attributes  'icons': 'font',
+                'title': project.name,
+                'revnumber': "${project.version}",
                 'toc': 'left',
                 'toc-title':'Table of Contents',
                 'encoding': 'utf-8',
                 'linkcss': true,
-                'source-highlighter': 'highlightjs',
+                'idprefix':'',
+                'idseparator':'-',
+                'numbered': true,
+                'linkattrs': true,
+                //'source-highlighter': 'highlightjs',
+                'source-highlighter': 'prettify',
                 'docinfodir': 'docinfo',
                 'docinfo': 'shared'
     outputDir = file('build/docs')

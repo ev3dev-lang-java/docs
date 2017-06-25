@@ -2,7 +2,7 @@
 
 A Java project to build Software for Robots using hardware supported by EV3Dev & the LeJOS way.
 
-## 1. Introduction
+## Introduction
 
 Lego Mindstorms ecosystem is
 `a fantastic educational way to learn Java, Linux and Robotics` to develop your creativity using your favourite Bricks.
@@ -20,7 +20,7 @@ The answer is this project, **EV3Dev-java**.
 
 image:./theThreeAmigos.jpg[ScreenShot]
 
-## 2. EV3Dev-java Subprojects
+## EV3Dev-java Subprojects
 
 `EV3Dev-java` has been designed with the modularity in mind from the beginning.
 
@@ -39,7 +39,7 @@ battery monitor to protect your hardware against low battery levels
 * https://github.com/ev3dev-lang-java/installer[Installer]: A set of
 Bash scripts to automate some operations with your brick
 
-## 3. Competitive advantages
+## Competitive advantages
 
 This project has the following competitive advantages:
 
@@ -72,7 +72,7 @@ CPU: 4× ARM Cortex-A53, 1.2GHz
 RAM: 1GB LPDDR2 (900 MHz)
 ....
 
-## 4. Features out of the box
+## Features out of the box
 
 *Java features*
 
@@ -114,8 +114,7 @@ navigation stack] Support
 * https://github.com/ev3dev-lang-java/RPLidar4J[RPLidar A1] (2D Lidar)
 Support
 
-
-## 5. Timeline of the project
+## Timeline of the project
 
 In 2015, EV3Dev is born to offer a solution to install a complete
 link:https://www.debian.org[Linux Debian Operating System] on
@@ -130,7 +129,7 @@ on Lego Mindstorms and providing a port of `LeJOS` libraries like the `local-nav
 In 2017 Q3, the project will be renamed as `EV3Dev-java` to be shorted and to not generate confusion with the usage
 of link:https://github.com/ev3dev/ev3dev-lang[EV3Dev binding features].
 
-## 6. Evolution of Java on Lego Mindstorms ecosystem
+## Evolution of Java on Lego Mindstorms ecosystem
 
 LeJOS project is the unique Open Source project present on every Lego Mindstorms generations of the product.
 In any generation, the project had to find a solution for the following layers:
