@@ -1,4 +1,4 @@
-= EV3 Gyro sensor
+# EV3 Gyro sensor
 
 The digital EV3 Gyro Sensor measures the robot’s rotational motion and changes in its orientation.
 

@@ -15,7 +15,7 @@ In same way, in a Robot, it is possible to use sensors in your robots to get dat
 
 ### Exteroceptors sensors
 
-* link:ev3_us_sensor.html[Ultrasonic sensor]
+* link:ev3-us-sensor/ev3_us_sensor.html[Ultrasonic sensor]
 * link:ev3_ir_sensor.html[Infrared sensor]
 * link:ev3_touch_sensor.html[Touch sensor]
 * link:ev3_light_sensor.html[Light sensor]
@@ -43,7 +43,7 @@ image:./31313.png[image]
 
 The Kit includes the following sensors:
 
-* link:ev3_us_sensor.html[Ultrasonic sensor] x1
+* link:ev3-us-sensor/ev3_us_sensor.html[Ultrasonic sensor] x1
 * link:ev3_touch_sensor.html[Touch sensor] x2
 * link:ev3_light_sensor.html[Light sensor] x1
 * link:ev3_gyro_sensor.html[Gyro sensor] x1
