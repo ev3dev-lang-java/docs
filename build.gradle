@@ -45,9 +45,9 @@ asciidoctor {
                 'numbered': true,
                 'linkattrs': true,
                 //'source-highlighter': 'highlightjs',
-                'source-highlighter': 'prettify',
-                'docinfodir': 'docinfo',
-                'docinfo': 'shared'
+                'source-highlighter': 'prettify'
+                //'docinfodir': 'docinfo',
+                //'docinfo': 'shared'
     outputDir = file('build/docs')
 }
 
