@@ -1,61 +1,91 @@
-= Sensors
+# Sensors
 
-== Introduction
+## Introduction
 
-Human being has 5 senses to measure signals from the environment to interact with the world. The senses are: sight,
-hearing, taste, smell and touch.
+A human being has 5 senses to measure signals from the environment to interact with the world.
+The senses are: sight, hearing, taste, smell and touch.
 
 image:./humanSenses.png[image]
 
-In robotics, it is possible to add sensors in your robots to get data from environment or internal state of that
-creation to intereact. Robots built with a EV3 has the opportunity to use 4 sensors connected to the brick.
-If you classify the nature of the information which sensors measure, you have 2 groups:
+In same way, in a Robot, it is possible to use sensors in your robots to get data from environment or
+ the internal state of itself. If you classify the nature of the information which sensors measure, you have 2 groups:
 
-. “exteroceptors” for the measurement of its environmental (external, from the robot point of view) parameters.
-. “proprioceptors” for the measurement of the robot’s (internal) parameters
+* **Exteroceptors Sensors** measure the environment from the robot point of view.
+* **Proprioceptors Sensors** measure the internal state of robot (For example the battery level).
 
-*Exteroceptors sensors*
-Exteroceptors are sensors that measure the positional or force-type interaction of the robot with its environment. 
+### Exteroceptors sensors
 
-*Proprioceptors sensors*
-Proprioception in robotics means sensing the internal state of the robot or a part of it . For example the posture of
-a mechanical manipulator, leg or other jointed mechanism or the battery level.
+* link:ev3_us_sensor.html[Ultrasonic sensor]
+* link:ev3_ir_sensor.html[Infrared sensor]
+* link:ev3_touch_sensor.html[Touch sensor]
+* link:ev3_light_sensor.html[Light sensor]
 
-== Exteroceptors sensors in EV3
+### Proprioceptors sensors
 
-=== Introduction
+* link:ev3_large_motor.html[Lego Large Motor state]
+* link:battery.html[Battery Sensor]
 
-In the market, Lego Mindstorms for EV3 has 2 kits in the market:
+## Source of sensors
 
-*31313*
-The set includes the following exteroceptor sensors:
+### LEGO 31313 Kit
 
-. link:ev3_ir_sensor.html[Infrared sensor] x1
-. link:ev3_touch_sensor.html[Touch sensor] x1
-. link:ev3_light_sensor.html[Light sensor] x1
+This Lego Mindstorms Kit include the following sensors:
+
+* link:ev3_ir_sensor.html[Infrared sensor] x1
+* link:ev3_touch_sensor.html[Touch sensor] x1
+* link:ev3_light_sensor.html[Light sensor] x1
+* link:ev3_large_motor.html[Lego Large Motor state]
+* link:battery.html[Battery Sensor]
 
 image:./31313.png[image]
 
-*45554*
-The set includes the following exteroceptor sensors:
+### LEGO 45544 Kit
 
-. Ultrasonic sensor x1
-. link:ev3_touch_sensor.html[Touch sensor] x2
-. link:ev3_light_sensor.html[Light sensor] x1
-. link:ev3_gyro_sensor.html[Gyro sensor] x1
+The Kit includes the following sensors:
+
+* link:ev3_us_sensor.html[Ultrasonic sensor] x1
+* link:ev3_touch_sensor.html[Touch sensor] x2
+* link:ev3_light_sensor.html[Light sensor] x1
+* link:ev3_gyro_sensor.html[Gyro sensor] x1
+* link:ev3_large_motor.html[Lego Large Motor state]
+* link:battery.html[Battery Sensor]
 
 image:./45544.png[image]
 
-Besides, in the market exist others exteroceptor sensors from Lego education, Mindsensors, Dexter Laboratories
-and HiTechnics.
+### Dexter Industries BrickPi3/BrickPi+
 
-== Proprioceptors sensors in EV3
+The Kit includes the following sensors:
 
-=== Introduction
+* link:battery.html[Battery Sensor]
+* Grove Adapter (Only for BrickPi3)
 
-Once you have discovered how to use EV3 sensors to get data from the world, it is necessary to discover other kind
-of sensors used to measure internal state of your own robot.
+image:./brickpi3.jpg[image]
 
-. link:ev3_gyro_sensor.html[Gyro sensor] x1
-. link:ev3_large_motor.html[Lego Large Motor state]
-. Battery
+### Mindsensors PiStorms
+
+The Kit includes the following sensors:
+
+* link:battery.html[Battery Sensor]
+
+image:./pistorms-v2.jpg[image]
+
+### Mindsensors Sensors
+
+* AbsoluteIMU
+* Grove Sensor Adapter for EV3
+* Vision Subsystem v5
+
+### USB Webcams
+
+image:./logitech-webcam.png[image]
+
+### Grove Sensors
+
+image:./grove-system.jpg[image]
+
+### Slamtec Sensors
+
+* 2D LIDAR RPlidar A1
+* 2D LIDAR RPlidar A2
+
+image:./slamtec-rplidar-a2.png[image]
