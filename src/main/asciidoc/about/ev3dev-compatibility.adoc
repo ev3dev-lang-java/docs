@@ -20,12 +20,14 @@ This table is a summary of the compatibility of all Sensors & Actuators in relat
 | IR Beacon | Yes | Yes | - | -
 | IR Remote | Yes | Yes | - | -
 | US Sensor Distance | Yes | Yes | Yes | -
-|========================================
+|===
 
-https://www.cs.cmu.edu/~chuck/robotpg/robofaq/9.html
-http://www.yourarticlelibrary.com/robots/robots-5-important-components-of-robots/5692/
-http://sciencing.com/main-parts-robot-7403157.html
-http://www.mind.ilstu.edu/curriculum/medical_robotics/parts_of_robots.php
+**References**
+
+* https://www.cs.cmu.edu/~chuck/robotpg/robofaq/9.html
+* http://www.yourarticlelibrary.com/robots/robots-5-important-components-of-robots/5692/
+* http://sciencing.com/main-parts-robot-7403157.html
+* http://www.mind.ilstu.edu/curriculum/medical_robotics/parts_of_robots.php
 
 ++++
 
