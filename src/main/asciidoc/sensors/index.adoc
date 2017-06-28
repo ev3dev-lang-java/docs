@@ -5,7 +5,7 @@
 A human being receives signals continuously from his 5 senses (sight, hearing, taste, smell and touch)
 and that stream of data are processed or discarded by the Brain.
 
-image:./humanSenses.png[image]
+image:images//humanSenses.png[image]
 
 With a Robot occurs the same, when you plug a sensor in the brick, your program is able to process
 a new kind of data from the environment.
@@ -29,7 +29,7 @@ The following sensors are designed to measure the internal state of the robot.
 
 * link:ev3-gyro-sensor/ev3_gyro_sensor.html[EV3 Gyro sensor]
 * link:ev3_large_motor.html[EV3 Lego Large Motor state]
-* link:battery.html[Battery Sensor]
+* link:battery/index.html[Battery Sensor]
 
 ## Source of sensors
 
@@ -42,11 +42,11 @@ This Lego Mindstorms Kit include the following sensors to play with them:
 * link:ev3-ir-sensor/ev3_ir_sensor.html[EV3 Infrared sensor] x1
 * link:ev3-touch-sensor/ev3_touch_sensor.html[EV3 Touch sensor] x1
 * link:ev3-light-sensor/ev3_light_sensor.html[EV3 Light sensor] x1
-* link:ev3_large_motor.html[EV3 Large Motor state] x2
-* link:ev3_medium_motor.html[EV3 Medium Motor state] x1
-* link:battery.html[Battery Sensor]
+* link:ev3-motors/ev3_large_motor.html[EV3 Lego Large Motor state] x2
+* link:ev3-motors/ev3_medium_motor.html[EV3 Medium Motor state] x1
+* link:battery/index.html[Battery Sensor]
 
-image:./31313.png[image]
+image:images/31313.png[image]
 
 ### LEGO 45544 Kit
 
@@ -56,28 +56,28 @@ This Lego Mindstorms Kit include the following sensors to play with them:
 * link:ev3-touch-sensor/ev3_touch_sensor.html[EV3 Touch sensor] x2
 * link:ev3-light-sensor/ev3_light_sensor.html[EV3 Light sensor] x1
 * link:ev3-gyro-sensor/ev3_gyro_sensor.html[EV3 Gyro sensor] x1
-* link:ev3_large_motor.html[EV3 Lego Large Motor state] x2
-* link:ev3_medium_motor.html[EV3 Medium Motor state] x1
-* link:battery.html[Battery Sensor]
+* link:ev3-motors/ev3_large_motor.html[EV3 Lego Large Motor state] x2
+* link:ev3-motors/ev3_medium_motor.html[EV3 Medium Motor state] x1
+* link:battery/index.html[Battery Sensor]
 
-image:./45544.png[image]
+image:images//45544.png[image]
 
-### Dexter Industries BrickPi3/BrickPi+
+### Dexter Industries BrickPi
 
 The Kit includes the following sensors:
 
-* link:battery.html[Battery Sensor]
+* link:battery/index.html[Battery Sensor]
 * Grove Adapter (Only for BrickPi3)
 
-image:./brickpi3.jpg[image]
+image:images//brickpi3.jpg[image]
 
 ### Mindsensors PiStorms
 
 The Kit includes the following sensors:
 
-* link:battery.html[Battery Sensor]
+* link:battery/index.html[Battery Sensor]
 
-image:./pistorms-v2.jpg[image]
+image:images//pistorms-v2.jpg[image]
 
 ### Mindsensors Sensors
 
@@ -91,14 +91,17 @@ TIP: In the future, the list will grow.
 ### USB Webcams
 
 USB Cameras is another way to measure the world.
+Using OpenCV, it is possible to manage a webcam with Java.
 
-image:./logitech-webcam.png[image]
+* link:usb-webcam/index.html[OpenCV & Webcams]
+
+image:images/logitech-webcam.png[image]
 
 ### Grove Sensors
 
 Grove System, offer a rich set of sensors to measure the environment.
 
-image:./grove-system.jpg[image]
+image:images/grove-system.jpg[image]
 
 The sensors are possible to connect with your brick in the following ways:
 
@@ -107,17 +110,14 @@ The sensors are possible to connect with your brick in the following ways:
 * PiStorms V2: Using the Mindsensors Grove Sensor Adapter for EV3
 * BrickPi 3: It is possible to connect a sensor directly.
 
+image:images/ev3-grove-sensor-adapter.jpg[image]
+
 ### Slamtec Sensors
 
-* 2D LIDAR RPlidar A1
+* link:usb-rplidar/index.html[2D LIDAR RPlidar A1]
 * 2D LIDAR RPlidar A2
 
-RPLIDAR is a low cost 360 degree 2D laser scanner (LIDAR) solution
-developed by RoboPeak. The system can perform 360 degree scan within
-6 meter range. The produced 2D point cloud data can be used in mapping,
-localization and object/environment modeling.
-
-image:./slamtec-rplidar-a2.png[image]
+image:images/slamtec-rplidar-a2.png[image]
 
 ++++
 

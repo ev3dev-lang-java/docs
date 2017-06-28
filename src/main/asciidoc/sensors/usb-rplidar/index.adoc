@@ -1,0 +1,19 @@
+# 2D LIDAR RPLIDAR
+
+## Introduction
+
+RPLIDAR is a low cost 360 degree 2D laser scanner (LIDAR) solution
+developed by RoboPeak. The system can perform 360 degree scan within
+6 meter range. The produced 2D point cloud data can be used in mapping,
+localization and object/environment modeling.
+
+image:slamtec-rplidar-a2.png[image]
+
+## How to use the sensor
+
+### Detect obstacles in the range 345º to 15º
+
+[source,java]
+----
+include::Demo3.java[]
+----

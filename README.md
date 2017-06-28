@@ -6,7 +6,11 @@ To generate in local the documentation, execute the following commands:
 
 ```
 ./gradlew -t asciidoctor
+```
+
+```
 ./gradlew livereload & 
+```
 python -m SimpleHTTPServer 8000 &
 ```
 

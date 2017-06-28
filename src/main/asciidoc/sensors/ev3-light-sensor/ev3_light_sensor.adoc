@@ -1,5 +1,6 @@
-= EV3 Light sensor
+# EV3 Light sensor
 
+## Introduction
 The digital EV3 Color Sensor distinguishes between eight different colors.
 It also serves as a light sensor by detecting light intensities.
 Students can build color sorting and line-following robots, experiment with light reflection of different colors,
@@ -15,10 +16,9 @@ The range of values for a light sensor measuring the reflected light intensity a
 * Minimum: 0, Black
 * Maximum: 100, White
 
-*How to use the sensor*
-Example 1: Measure the reflected light intensity from the EV3 light sensor.
+## How to use the sensor
 
-image:./ev3_light_sensor_example1.png[image]
+### Measure the reflected light intensity from the EV3 light sensor.
 
 [source,java]
 ----

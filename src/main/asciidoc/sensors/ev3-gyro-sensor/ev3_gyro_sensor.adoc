@@ -1,5 +1,7 @@
 # EV3 Gyro sensor
 
+## Introduction
+
 The digital EV3 Gyro Sensor measures the robot’s rotational motion and changes in its orientation.
 
 image:ev3_gyro_sensor.png[image]
@@ -11,19 +13,23 @@ Gyroscope Features:
 . Dual-mass, vibratory MEMS gyroscope offers superior vibration rejection over a wide frequency range. The dual-mass design inherently rejects any signal caused by linear acceleration.
 . 10,000 g shock tolerance The Rate-Out of the gyro is not ratiometric to the supply voltage. The scale factor is calibrated at the chip foundry and is nominally independent of supply voltage.
 
-Example1: Turn your robot using a EV3 Gyro sensor.
+## How to use the sensor
 
-image:ev3_gyro_sensor_example1.png[image]
+### Read the angle
 
 [source,java]
 ----
 include::./GyroSensorDemo.java[]
 ----
 
+### Use the rate mode
+
 [source,java]
 ----
 include::./GyroSensorDemo2.java[]
 ----
+
+### Detect that your robot turn 90 degrees
 
 [source,java]
 ----

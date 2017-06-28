@@ -1,0 +1,16 @@
+# Battery
+
+# Introduction
+
+Every Brick has a way to detect the voltage of the Battery.
+
+image:ev3-battery.jpg[image]
+
+## How to use the sensor
+
+### Read the voltage
+
+[source,java]
+----
+include::BatteryDemo.java[]
+----
