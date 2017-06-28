@@ -28,7 +28,8 @@ The following sensors are designed to measure the environment.
 The following sensors are designed to measure the internal state of the robot.
 
 * link:ev3-gyro-sensor/ev3_gyro_sensor.html[EV3 Gyro sensor]
-* link:ev3_large_motor.html[EV3 Lego Large Motor state]
+* link:ev3-motors/ev3_large_motor.html[EV3 Lego Large Motor state]
+* link:ev3-motors/ev3_medium_motor.html[EV3 Lego Medium Motor state]
 * link:battery/index.html[Battery Sensor]
 
 ## Source of sensors

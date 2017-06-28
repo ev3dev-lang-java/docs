@@ -10,7 +10,10 @@ image:ev3_large_motor.png[image]
 
 ### Read the state of the motor
 
-image:ev3_large_motor_example1.png[image]
+[source,java]
+----
+include::MotorEncoderTest.java[]
+----
 
 ++++
 
