@@ -1,8 +1,11 @@
 # EV3Dev-Java / docs
 
+This documentation will be useful in the way to learn `Robotics` with this `Java` project.
+
 ## Getting Started
 
-* link:./getting_started/laptop.html[Getting started with your Laptop]
+* link:./getting_started/index.html[Introduction]
+* link:./getting_started/laptop.html[Getting started with your personal computer]
 * link:./getting_started/brick.html[Getting started with your Brick]
 
 ## Fundamentals of Robotics

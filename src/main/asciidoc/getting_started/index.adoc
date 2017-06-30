@@ -1,0 +1,32 @@
+# Getting Started
+
+## Introduction
+
+This section will guide you in your first steps with the project.
+To execute in your Brick your first robotics program with Java,
+it is necessary to install some components in your personal computer and your Brick.
+
+The project has been designed with the idea that the user creates Java programs in a Personal computer
+and later send the programs to Brick using a remote connections. With this approach, the user will learn the same techniques applied in the industry with Enterprise applications
+but in this case with Robotics programs with Java.
+
+## Personal computer
+
+To use the libraries developed in this project, it is necessary to have installed
+in the personal computer a modern Java development environment composed by the following elements:
+
+- Java JDK
+- Build Systems (Maven & Gradle)
+- Git & SourceTree
+- Java IDE like IntelliJ or Eclipse
+
+
+In the section about link:laptop.html[Getting started with your personal computer],
+you will learn how to install that elements.
+
+## Brick
+
+This project supports multiple platforms like Lego Mindstorms EV3, BrickPi & PiStorms.
+If you have one of them, it is possible to use this project. In the section about link:./getting_started/brick.html[Getting started with your Brick],
+you will learn how to install a Linux Operating System and Java JRE to run later your own
+ robotics programs with Java.

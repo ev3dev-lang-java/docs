@@ -1,9 +1,10 @@
-# Getting Started on your computer
+# Getting Started with your personal computer
 
-## Install/Update your development environment
+## Requirements
 
-### Install Java
+### Java
 
+To program, with Java, it is necessary to install in your laptop Java JDK.
 To begin any Java development, you need to be installed Java. 
 
 *OSX:*
@@ -17,7 +18,10 @@ brew install Caskroom/cask/java
 
 Further information about Java: https://www.java.com/es/about/whatis_java.jsp[https://www.java.com/es/about/whatis_java.jsp]
 
-### Install Maven/Gradle
+### Maven/Gradle
+
+Modern Java development use dependencies stored on Software Repositories.
+It is a good idea if you install the popular Build Systems as `Maven` & `Gradle`
 
 *OSX:*
 
@@ -31,12 +35,22 @@ Further information about Maven &amp; Gradle:
 https://maven.apache.org/[https://maven.apache.org/]
 https://gradle.org/[https://gradle.org/]
 
-### Install a Git Client
+### Git
+
+Git is a popular technology to manage code. Many ideas that you see on Internet are stored on
+Git repositories so manage this technology is necessary.
+Besides, the project includes some project templates to help you in the process to have your first project
+ready to use with your brick.
+
 
 Install a visual Git Client to download this repository.
 https://www.sourcetreeapp.com/[https://www.sourcetreeapp.com/]
 
-### Install a Java IDE
+### Java IDE
+
+
+To develop any Java file, with a text editor is enough but the right way to develop Java programs is using a Modern IDE
+like `IntelliJ` or `Eclipse`
 
 Install a Java IDE to develop Java Software
 https://www.jetbrains.com/idea/[https://www.jetbrains.com/idea/]

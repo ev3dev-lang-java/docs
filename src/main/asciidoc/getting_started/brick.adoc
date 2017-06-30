@@ -1,5 +1,17 @@
 # Getting Started on your brick
 
+
+#### Debian
+
+Debian is a Linux Operating System used in millions of computers on the world.
+This project use Debian delivered by the project `EV3Dev` which provide a interface
+to interact with Lego Mindstorms EV3 Brick and other boards compatible like `BrickPi` & `PiStorms`
+
+#### Java JRE
+
+Any Java program run on a JVM (Java Virtual Machine) so, it is necessary to install it.
+
+
 ## 1. Install EV3Dev on your brick
 
 Follow the link to install EV3Dev on your brick:
