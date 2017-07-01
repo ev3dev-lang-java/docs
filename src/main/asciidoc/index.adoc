@@ -1,6 +1,6 @@
 # EV3Dev-Java / docs
 
-This documentation will be useful in the way to learn `Robotics` with this `Java` project.
+This documentation will guide in the way to learn `Robotics` with this `Java` project.
 
 ## Getting Started
 

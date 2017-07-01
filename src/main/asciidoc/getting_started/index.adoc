@@ -2,31 +2,51 @@
 
 ## Introduction
 
-This section will guide you in your first steps with the project.
-To execute in your Brick your first robotics program with Java,
-it is necessary to install some components in your personal computer and your Brick.
+Learn or test a new Technology is always a new challenge. This section tries to
+reduce the time invested to install the required software to enjoy with
+`Java` and `Robotics` with the help of the products from Lego Mindstorms ecosystem.
+To start programming Robotics with Java, it is necessary to install some components in your personal computer and your Brick.
 
 The project has been designed with the idea that the user creates Java programs in a Personal computer
 and later send the programs to Brick using a remote connections. With this approach, the user will learn the same techniques applied in the industry with Enterprise applications
 but in this case with Robotics programs with Java.
 
-## Personal computer
+## The Steps
 
-To use the libraries developed in this project, it is necessary to have installed
-in the personal computer a modern Java development environment composed by the following elements:
+### Personal computer
 
+Modern environment to development requires always the same stuff:
+a package managers to install software easily, Runtine oriented to the technology, Build system to manage the dependencies and the whole life cycle,
+Integrated development environments IDE & Tools to store code in source code repositories.
+In this project, the components to install are:
+
+- A package manager
 - Java JDK
 - Build Systems (Maven & Gradle)
+- Java IDE (IntelliJ or Eclipse)
 - Git & SourceTree
-- Java IDE like IntelliJ or Eclipse
-
 
 In the section about link:laptop.html[Getting started with your personal computer],
-you will learn how to install that elements.
+you will learn how to install all components.
 
-## Brick
+### Brick
 
-This project supports multiple platforms like Lego Mindstorms EV3, BrickPi & PiStorms.
-If you have one of them, it is possible to use this project. In the section about link:./getting_started/brick.html[Getting started with your Brick],
-you will learn how to install a Linux Operating System and Java JRE to run later your own
- robotics programs with Java.
+In the Brick side, the process to install sofware is easier because we only have 2 steps:
+
+- Install a Operating System
+- Install a Java Virtual Machine, JVM
+
+If your Brick is a Lego Mindstorms EV3, BrickPi or PiStorms then you could use this project.
+In the section about link:brick.html[Getting started with your Brick],
+you will learn how to install the components.
+
+## The Next Step
+
+If you are reading this section, you reach 2 goals:
+
+- You executed the classic Java program `Hello World` in your personal computer
+- You executed some classic Java programs in your Brick.
+
+In that case, continue with the next section about: `Fundamentals of Robotics`
+but if you stopped in some point, read previous documents again and if the problem
+ continues, create a link:https://github.com/ev3dev-lang-java/ev3dev-lang-java/issues/[Support issue on the project].

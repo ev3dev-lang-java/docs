@@ -1,13 +1,96 @@
 # Getting Started with your personal computer
 
-## Requirements
+## Introduction
 
-### Java
+This project is about `Java` to create Software for `Robots`, so the first question that you need to answer is:
 
-To program, with Java, it is necessary to install in your laptop Java JDK.
-To begin any Java development, you need to be installed Java. 
+TIP: Is my personal computer ready to write Java programs in general?
 
-*OSX:*
+If the answer is **Yes**, you could Skip this document and jump directly to the section
+link:brick.html[Getting started with your Brick] but if you didn´ install Java and other Java components related
+in the computer that you are going to use with this project then it is pretty useful that continue reading this document.
+
+## The modern Java development environment
+
+`Java` is possible to run in the most popular desktop Operating Systems like: `OSX`, `Windows` & `Ubuntu`
+and Robotics platforms like `Lego Mindstorms`. The components that you will have to install are:
+
+- A package manager
+- Java JDK
+- Build Systems (Maven & Gradle)
+- Java IDE (IntelliJ or Eclipse)
+- Sources & Repositories (Git & SourceTree)
+
+The software listed previously is possible to install manually but it is better the usage of Package installer tools
+like `Brew` for OSX or `apt` for Ubuntu.
+
+### OSX
+
+If your personal computer is manufactured from Apple, the following instructions will help you.
+
+#### Homebrew, the package manager for OSX
+
+Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple's macOS operating system.
+
+[source]
+----
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+----
+
+To check if you installed Homebrew:
+
+[source]
+----
+brew config
+----
+
+You should view the following output:
+
+[source]
+----
+HOMEBREW_VERSION: 1.2.2
+ORIGIN: https://github.com/Homebrew/brew.git
+HEAD: 54e01d76db34a3a649c79b189873bfd0a52dbc9f
+Last commit: 4 weeks ago
+Core tap ORIGIN: https://github.com/Homebrew/homebrew-core
+Core tap HEAD: 530b7f9b6884bec2a8ea618d0a52c9691cef76bb
+Core tap last commit: 3 weeks ago
+HOMEBREW_PREFIX: /usr/local
+HOMEBREW_REPOSITORY: /usr/local/Homebrew
+HOMEBREW_CELLAR: /usr/local/Cellar
+HOMEBREW_BOTTLE_DOMAIN: https://homebrew.bintray.com
+CPU: quad-core 64-bit ivybridge
+Homebrew Ruby: 2.0.0-p648
+Clang: 8.1 build 802
+Git: 2.11.0 => /Library/Developer/CommandLineTools/usr/bin/git
+Perl: /usr/bin/perl
+Python: /usr/bin/python
+Ruby: /usr/bin/ruby => /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
+Java: 9, 1.8.0_121, 1.8.0_05, 1.7.0_51
+macOS: 10.12.5-x86_64
+Xcode: N/A
+CLT: 8.3.2.0.1.1492020469
+X11: N/A
+----
+
+In the next sections we will continue using HomeBrew for the rest of installation.
+
+TIP: If you have some problem with some concrete installation, you could install manually but it is bettert to unify
+the way to install everything.
+
+Further information about link:https://brew.sh/[Homebrew]
+
+#### Java
+
+To program, with Java, it is necessary to install in your laptop a
+A Java Development Kit (JDK).
+
+A Java Development Kit (JDK) is a program development environment
+for writing Java applications. It consists of a runtime environment that "sits on top" of the operating system layer
+as well as the tools and programming that developers need to compile, debug, and run applications
+written in the Java language.
+
+To begin using Java:
 
 [source]
 ----
@@ -16,50 +99,23 @@ brew tap caskroom/cask
 brew install Caskroom/cask/java
 ----
 
-Further information about Java: https://www.java.com/es/about/whatis_java.jsp[https://www.java.com/es/about/whatis_java.jsp]
-
-### Maven/Gradle
-
-Modern Java development use dependencies stored on Software Repositories.
-It is a good idea if you install the popular Build Systems as `Maven` & `Gradle`
-
-*OSX:*
+Test your java installation is easy:
 
 [source]
 ----
-brew install maven
-brew install gradle
+java -version
 ----
 
-Further information about Maven &amp; Gradle:
-https://maven.apache.org/[https://maven.apache.org/]
-https://gradle.org/[https://gradle.org/]
+You should view the following output:
 
-### Git
+[source]
+----
+java version "1.8.0_121"
+Java(TM) SE Runtime Environment (build 1.8.0_121-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
+----
 
-Git is a popular technology to manage code. Many ideas that you see on Internet are stored on
-Git repositories so manage this technology is necessary.
-Besides, the project includes some project templates to help you in the process to have your first project
-ready to use with your brick.
-
-
-Install a visual Git Client to download this repository.
-https://www.sourcetreeapp.com/[https://www.sourcetreeapp.com/]
-
-### Java IDE
-
-
-To develop any Java file, with a text editor is enough but the right way to develop Java programs is using a Modern IDE
-like `IntelliJ` or `Eclipse`
-
-Install a Java IDE to develop Java Software
-https://www.jetbrains.com/idea/[https://www.jetbrains.com/idea/]
-
-## Test your local environment
-
-Once, you have installed everything, it is necessary to verify that everything goes well.
-
-Create a file with the name of HelloWorld.java and copy and paste on it the following content:
+To check if you can compile java files, create a file with the name of HelloWorld.java and copy and paste on it the following content:
 
 [source,java]
 ----
@@ -73,8 +129,70 @@ javac HelloWorld.java
 java HelloWorld
 ```
 
-You should read: `HelloWorld` if the answer is **Yes**, your installation process on your
-personal computer has finished.
+You should read: `HelloWorld` in the terminal.
+
+Further information about link:https://www.java.com/es/about/whatis_java.jsp[Java]
+
+#### Build Systems (Maven/Gradle)
+
+Modern Java development use dependencies stored on Software Repositories.
+It is a good idea if you install the popular Build Systems as `Maven` & `Gradle`
+
+
+[source]
+----
+brew install maven
+brew install gradle
+----
+
+Further information about Maven &amp; Gradle:
+https://maven.apache.org/[https://maven.apache.org/]
+https://gradle.org/[https://gradle.org/]
+
+#### Java IDE
+
+
+To develop any Java file, with a text editor is enough but the right way to develop Java programs is using a Modern IDE
+like `IntelliJ` or `Eclipse`
+
+[source]
+----
+brew cask install intellij-idea
+brew cask install eclipse-java
+----
+
+Install a Java IDE to develop Java Software
+https://www.jetbrains.com/idea/[https://www.jetbrains.com/idea/]
+
+#### Sources & Repositories (Git & SourceTree)
+
+Git is a popular technology to manage code. Many ideas that you see on Internet are stored on
+Git repositories so manage this technology is necessary.
+Besides, the project includes some project templates to help you in the process to have your first project
+ready to use with your brick.
+
+[source]
+----
+brew cask install sourcetree
+----
+
+Install a visual Git Client to download this repository.
+https://www.sourcetreeapp.com/[https://www.sourcetreeapp.com/]
+
+
+### Windows
+
+[source]
+----
+PENDING
+----
+
+### Ubuntu
+
+[source]
+----
+PENDING
+----
 
 ++++
 
