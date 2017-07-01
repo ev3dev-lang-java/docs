@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Any Robot is based on the combination of Software & Hardware.
+Any Robot is a combination of Software & Hardware.
 The `Architecture` of any robot is based on the following components:
 
 * Control System
@@ -20,22 +20,27 @@ In a Mindstorms context, the Control System is the Brick we use to create Robots
 
 image:ev3-brick.png[image]
 
+In the third generation of Lego Mindstorms, it is possible to use Raspberry Pi to manage Sensors & Actuators from
+Lego Mindstorms ecosystem:
+
+image:brickpi3.jpg[image]
+
 ### Sensors
 
 Sensors measure a physical quantity, and convert it into a usable signal for your control systen.
 When you are designing the robot it is important to choose the correct sensors to enable it to be aware of
 its environment and perform the tasks required.
 
-In a Mindstorms context, an Actuator is the EV3 IR Sensor:
+In a Mindstorms context, a Sensor is the EV3 IR Sensor which is able to detect objects and detect the EV3 Beacon.
 
 image:ev3_ir_sensor.png[image]
 
 ### Actuators
 
-An “actuator” can be defined as a device that converts energy (in robotics, that energy tends to be electrical)
-into physical motion. The vast majority of actuators produce either rotational or linear motion.
+An "actuator” can be defined as a device that converts energy (in robotics, that energy tends to be electrical)
+into physical motion or a determinated output like a visualization in a Display or the generation of a Sound.
 
-In a Mindstorms context, an Actuator is the EV3 Large Motor:
+In a Mindstorms context, an actuator is the EV3 Large Motor:
 
 image:ev3_large_motor.png[image]
 
@@ -44,24 +49,9 @@ image:ev3_large_motor.png[image]
 An electric battery is a device consisting of one or more electrochemical cells with external connections
 provided to power electrical devices.
 
-In a Mindstorms context, the Battery is this element:
+In a Mindstorms context, one example about Battery is the rechargeable EV3 Battery:
 
 image:ev3-battery.jpg[image]
-
-The rechargeable battery run in combination with the power adapter:
-
-image:ev3-battery-power-adapter.jpg[image]
-
-**References:**
-
-- https://www.cs.cmu.edu/~chuck/robotpg/robofaq/9.html
-- http://sciencing.com/main-parts-robot-7403157.html
-- https://en.wikipedia.org/wiki/Control_system
-- https://en.wikipedia.org/wiki/Robotic_sensors
-- http://www.robotshop.com/blog/en/how-to-make-a-robot-lesson-3-actuators-2-3703
-- https://en.wikipedia.org/wiki/Battery_(electricity)
-- https://en.wikipedia.org/wiki/Power_supply
-- http://www.societyofrobots.com/batteries.shtml
 
 ++++
 

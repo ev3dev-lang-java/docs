@@ -1,38 +1,57 @@
 # Getting Started on your brick
 
+## Introduction
 
-#### Debian
+In the third generation of Lego Mindstorms exist
+multiple Bricks with compatibility with Sensors & Actuators from
+Lego Mindstorms ecosystem. This fact is a real software engineering challenge
+to manage all Bricks, but for that purpose appeared `EV3Dev`.
 
-Debian is a Linux Operating System used in millions of computers on the world.
+EV3Dev provides a Debian Installation for the Bricks and
+a set of utilities to interact with the hardware in an easy way.
+
+The steps to do in your Brick are:
+
+- Install a Operating System
+- Install a Java Virtual Machine, JVM
+
+## Install an Operating System
+
+Previously, we mentioned that `EV3Dev` provides a Debian image to install in a `microSD`.
+
+TIP: Debian is a Linux Operating System used in millions of computers on the world.
 This project use Debian delivered by the project `EV3Dev` which provide a interface
-to interact with Lego Mindstorms EV3 Brick and other boards compatible like `BrickPi` & `PiStorms`
+to interact with `Lego Mindstorms EV3 Brick` and other boards compatible like `BrickPi` & `PiStorms`.
 
-#### Java JRE
+To install `EV3Dev`, follow the link to link:http://www.ev3dev.org/docs/getting-started/[install EV3Dev on your Brick]
 
-Any Java program run on a JVM (Java Virtual Machine) so, it is necessary to install it.
+### Test the installation
 
+Once you have finished the process to install the EV3Dev image on your Brick, try to establish a remote `ssh` connection.
+Verify that your Brick has a connection in the same network than your computer
 
-## 1. Install EV3Dev on your brick
+[source]
+----
+ssh robot@192.168.1.104
+----
 
-Follow the link to install EV3Dev on your brick:
+If you connected with your brick then you have completed this process and
+now you will have a Brick with a complete Linux distro to run any Programming language.
 
-http://www.ev3dev.org/docs/getting-started/
+TIP: Please, maintain your brick always updated.
 
-Once you finish the installation process and the remote `ssh` connection test, 
-you will have a complete Linux distro to run any Programming language.
-
-**Note:** Please, maintain your brick updated. Execute the following commands 
-before jump to the next step in this guide.
+Execute the following commands before jump to the next step in this guide.
 
 ```
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
-sudo reboot
+sudo reboot now
 ```
 
 ## Install Java on your brick
 
+Any Java program run on a JVM (Java Virtual Machine) so, it is necessary to install it.
 For this step exists 2 paths. One path is for EV3 Brick and another path for BrickPi/PiStorms users.
 
 ### EV3 Brick
@@ -69,7 +88,6 @@ sudo ./installer.sh
 ```
 tar -zxvf "/home/robot/ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" -C /opt
 sudo update-alternatives --install /usr/bin/java java /opt/ejdk1.8.0/linux_arm_sflt/jre/bin/java 1
-java -version
 ```
 
 Now, you have Java on your EV3 Brick
@@ -90,64 +108,16 @@ sudo ./installer.sh help
 sudo ./installer.sh
 ```
 
-## Create your first Project and deploy on your Brick
+## Test your installation
 
-Once you have the required infrastructure on your Brick, it is possible to experiment with the libraries in some ways:
-
-### Using a Gradle template project
-
-If you like, you can experiment with the project, using the following project template:
-
-https://github.com/ev3dev-lang-java/template_project_gradle
-
-Download the project, update the file: `config.gradle`: with the IP of you Brick:
+Once you have your bricks with the JVM, test the installation is easy.
+With the remote connection opened type:
 
 ```
-remotes {
-    ev3dev {
-        host = '10.0.1.3'
-        user = 'robot'
-        password = 'maker'
-    }
-}
+java -version
 ```
 
-To deploy the example on your brick, open a `terminal` and type:
-
-```
-./gradlew deployAndRun
-```
-
-Besides, exist a task to provide access to a Profiling tool if you execute:
-
-```
-./gradlew deployAndProfilingRun
-```
-
-### Create a project from scratch
-
-Another alternative is the creation of a project from Scratch using Maven/Gradle.
-
-To start a new project with this library, add the following repository and dependency.
-
-```xml
-<repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-</repositories>
-```
-
-``` xml
-<dependency>
-    <groupId>com.github.ev3dev-lang-java</groupId>
-    <artifactId>ev3dev-lang-java</artifactId>
-    <version>v0.6.1</version>
-</dependency>
-```
-	
-Further information about the Maven dependency: https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1
+Now, your Brick is ready to receive your Java programs.
 
 ++++
 

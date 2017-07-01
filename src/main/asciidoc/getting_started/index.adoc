@@ -31,7 +31,7 @@ you will learn how to install all components.
 
 ### Brick
 
-In the Brick side, the process to install sofware is easier because we only have 2 steps:
+The process to install software in the Brick is easier, we only have 2 steps:
 
 - Install a Operating System
 - Install a Java Virtual Machine, JVM
@@ -42,7 +42,7 @@ you will learn how to install the components.
 
 ## The Next Step
 
-If you are reading this section, you reach 2 goals:
+If you are reading this section, **Congratulations**, you have just reached 2 Goals:
 
 - You executed the classic Java program `Hello World` in your personal computer
 - You executed some classic Java programs in your Brick.

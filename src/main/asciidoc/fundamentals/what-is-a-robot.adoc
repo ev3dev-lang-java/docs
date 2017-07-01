@@ -2,7 +2,7 @@
 
 ## Definition
 
-A Robot is a machine programmable by a computer capable of carrying out
+A Robot is a machine programmable by a `Control system` capable of carrying out
 a series of actions automatically. Robots can be autonomous or
 semi-autonomous
 
@@ -35,6 +35,13 @@ in order to perform work on – or to heat – the object, and can be
 converted in form, but not created or destroyed.[
 
 https://en.wikipedia.org/wiki/Energy
+
+In the project, it is possible to measure the remaining energy that your robot has in the batteries:
+
+[source,java]
+----
+include::BatteryExample.java[]
+----
 
 ### Technology
 

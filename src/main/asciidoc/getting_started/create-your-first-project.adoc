@@ -1,0 +1,93 @@
+# Create your first Project
+
+## Introduction
+
+Create your first project is not complicated, for that action, exist 2 alternatives:
+
+- Create your project from a Template Project
+- Create your project from Scratch
+
+## Create your first project with a Gradle template project
+
+The project provide a Gradle template project ready to run in your favourite Java IDE.
+
+Visit this link:https://github.com/ev3dev-lang-java/template_project_gradle[Git repository] to download the project:
+
+```
+git clone https://github.com/ev3dev-lang-java/template_project_gradle.git
+```
+
+Once you have downloaded the project in your personal computer,
+open the project with your Java IDE to edit the file: `config.gradle`: to update IP of you Brick:
+
+
+```
+remotes {
+    ev3dev {
+        host = '10.0.1.3'
+        user = 'robot'
+        password = 'maker'
+    }
+}
+```
+
+The project are configured to send to the Brick the following example:
+
+[source,java]
+----
+include::MyFirstRobot.java[]
+----
+
+The example was designed to move a mobile robot with 2 motors connected to Port A & Port B.
+
+### Deploy your program
+
+To deploy the example on your brick, open a `terminal` and type:
+
+```
+./gradlew deployAndRun
+```
+
+## Create your first project from scratch
+
+Another alternative is the creation of a project from Scratch using Maven/Gradle.
+
+To start a new project with this library, add the following repository and dependency.
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+``` xml
+<dependency>
+    <groupId>com.github.ev3dev-lang-java</groupId>
+    <artifactId>ev3dev-lang-java</artifactId>
+    <version>v0.6.1</version>
+</dependency>
+```
+	
+Further information about link:https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1[the dependency]
+
+## Playing with more examples
+
+The project has a repository with several examples about the usage of the different libraries.
+
+Visit the link:https://github.com/ev3dev-lang-java/examples[repository about examples] to download and test more examples.
+
+++++
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+++++

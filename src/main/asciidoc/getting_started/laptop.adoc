@@ -2,18 +2,20 @@
 
 ## Introduction
 
-This project is about `Java` to create Software for `Robots`, so the first question that you need to answer is:
+This project is about the creation of `Java` programs for `Robots`, so the first question that you need to answer is:
 
 TIP: Is my personal computer ready to write Java programs in general?
 
-If the answer is **Yes**, you could Skip this document and jump directly to the section
-link:brick.html[Getting started with your Brick] but if you didn´ install Java and other Java components related
+If the answer is **Yes**, you could jump directly to the section
+link:brick.html[Getting started with your Brick] but
+if you didn´t install Java and other components related with this Java development
 in the computer that you are going to use with this project then it is pretty useful that continue reading this document.
 
 ## The modern Java development environment
 
-`Java` is possible to run in the most popular desktop Operating Systems like: `OSX`, `Windows` & `Ubuntu`
-and Robotics platforms like `Lego Mindstorms`. The components that you will have to install are:
+`Java` is possible to run in the most popular desktop Operating Systems like: `OSX`, `Windows` & `Ubuntu`.
+
+The components that you will have to install are:
 
 - A package manager
 - Java JDK
@@ -21,8 +23,9 @@ and Robotics platforms like `Lego Mindstorms`. The components that you will have
 - Java IDE (IntelliJ or Eclipse)
 - Sources & Repositories (Git & SourceTree)
 
-The software listed previously is possible to install manually but it is better the usage of Package installer tools
-like `Brew` for OSX or `apt` for Ubuntu.
+The software listed previously is possible to install manually but
+it is better the usage of a `package installer`
+like `HomeBrew` for OSX or `apt` for Ubuntu.
 
 ### OSX
 
@@ -73,7 +76,7 @@ CLT: 8.3.2.0.1.1492020469
 X11: N/A
 ----
 
-In the next sections we will continue using HomeBrew for the rest of installation.
+In the next sections, we will continue using HomeBrew for the rest of installation steps.
 
 TIP: If you have some problem with some concrete installation, you could install manually but it is bettert to unify
 the way to install everything.
@@ -82,15 +85,14 @@ Further information about link:https://brew.sh/[Homebrew]
 
 #### Java
 
-To program, with Java, it is necessary to install in your laptop a
-A Java Development Kit (JDK).
+To program with Java is necessary to install in your laptop a Java Development Kit (JDK).
 
 A Java Development Kit (JDK) is a program development environment
 for writing Java applications. It consists of a runtime environment that "sits on top" of the operating system layer
 as well as the tools and programming that developers need to compile, debug, and run applications
 written in the Java language.
 
-To begin using Java:
+To begin using Java, it is necessary to install the JDK:
 
 [source]
 ----
@@ -99,7 +101,7 @@ brew tap caskroom/cask
 brew install Caskroom/cask/java
 ----
 
-Test your java installation is easy:
+Once you have installed Java JDK, check the installation:
 
 [source]
 ----
@@ -115,14 +117,15 @@ Java(TM) SE Runtime Environment (build 1.8.0_121-b13)
 Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
 ----
 
-To check if you can compile java files, create a file with the name of HelloWorld.java and copy and paste on it the following content:
+To check if you are able to compile Java files,
+create a new file with the name of `HelloWorld.java` and copy and paste on it the following content:
 
 [source,java]
 ----
 include::./HelloWorld.java[]
 ----
 
-Later, open a terminal and type:
+Save the file and open in a terminal to type the following commands:
 
 ``` java
 javac HelloWorld.java
@@ -136,7 +139,10 @@ Further information about link:https://www.java.com/es/about/whatis_java.jsp[Jav
 #### Build Systems (Maven/Gradle)
 
 Modern Java development use dependencies stored on Software Repositories.
-It is a good idea if you install the popular Build Systems as `Maven` & `Gradle`
+It is a good idea if you install the popular build Systems as `Maven` & `Gradle` for Java.
+This project is modular and it deliver multiple dependencies.
+
+The way to install Maven & Gradle is:
 
 
 [source]
@@ -145,40 +151,41 @@ brew install maven
 brew install gradle
 ----
 
-Further information about Maven &amp; Gradle:
-https://maven.apache.org/[https://maven.apache.org/]
-https://gradle.org/[https://gradle.org/]
+Further information about link:https://maven.apache.org/[Maven] &amp; https://gradle.org/[Gradle].
 
 #### Java IDE
 
+To develop a single Java file, maybe you could use a simple Text Editor
+but current Java IDE offers several funcionalities to
+help you in the process to develop software with Java. In the market, the most popular Java IDE are `IntelliJ` & `Eclipse`.
 
-To develop any Java file, with a text editor is enough but the right way to develop Java programs is using a Modern IDE
-like `IntelliJ` or `Eclipse`
+To install `IntelliJ`:
 
 [source]
 ----
 brew cask install intellij-idea
+----
+
+To install `Eclipse`:
+
+[source]
+----
 brew cask install eclipse-java
 ----
 
-Install a Java IDE to develop Java Software
-https://www.jetbrains.com/idea/[https://www.jetbrains.com/idea/]
+Further information about link:https://www.jetbrains.com/idea/[IntelliJ] & Eclipse
 
 #### Sources & Repositories (Git & SourceTree)
 
 Git is a popular technology to manage code. Many ideas that you see on Internet are stored on
 Git repositories so manage this technology is necessary.
-Besides, the project includes some project templates to help you in the process to have your first project
-ready to use with your brick.
 
 [source]
 ----
 brew cask install sourcetree
 ----
 
-Install a visual Git Client to download this repository.
-https://www.sourcetreeapp.com/[https://www.sourcetreeapp.com/]
-
+Further information about link:https://www.sourcetreeapp.com/[SourceTree]
 
 ### Windows
 

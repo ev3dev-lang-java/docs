@@ -7,13 +7,18 @@ This documentation will guide in the way to learn `Robotics` with this `Java` pr
 * link:./getting_started/index.html[Introduction]
 * link:./getting_started/laptop.html[Getting started with your personal computer]
 * link:./getting_started/brick.html[Getting started with your Brick]
+* link:./getting_started/create-your-first-project.html[Getting started with your first project]
 
 ## Fundamentals of Robotics
 
 * link:./fundamentals/what-is-a-robot.html[What is a robot?]
-* link:./fundamentals/robot-architecture.html[The robot architecture]
-* link:./sensors/index.html[Sensors]
-* link:./actuators/index.html[Actuators]
+* link:./fundamentals/the-robot-architecture.html[The robot architecture]
+* link:./fundamentals/sensors/index.html[Sensors]
+* - link:./fundamentals/sensors/usb-lidar-rplidar/index.html[2D LIDAR]
+* - link:./fundamentals/sensors/usb-camera/index.html[USB Camera]
+* - link:./fundamentals/sensors/ev3-gyro-sensor/index.html[IMU]
+* link:./fundamentals/actuators/index.html[Actuators]
+* - link:./fundamentals/actuators/motors/index.html[Motors]
 
 ## About the project
 
