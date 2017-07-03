@@ -7,9 +7,9 @@ and that stream of data are processed or discarded by the Brain.
 
 image:images//humanSenses.png[image]
 
-With a Robot occurs the same, when you plug a sensor in the brick, your program is able to process
-a new kind of data from the environment.
-If you classify the nature of the information which sensors measure, exist the following categories:
+With a Robot occurs the same, when you plug a sensor into the brick and
+you execute a program which use a sensor the process about data reading from
+the environment is quite similar. Sensors are classifid by the nature of the information measured and exist two categories:
 
 * **Exteroceptors Sensors** measure the environment from the robot point of view.
 * **Proprioceptors Sensors** measure the internal state of robot (For example the battery level).
@@ -18,31 +18,33 @@ If you classify the nature of the information which sensors measure, exist the f
 
 The following sensors are designed to measure the environment.
 
-* link:ev3-us-sensor/ev3_us_sensor.html[EV3 Ultrasonic sensor]
-* link:ev3-ir-sensor/ev3_ir_sensor.html[EV3 Infrared sensor]
-* link:ev3-touch-sensor/ev3_touch_sensor.html[EV3 Touch sensor]
-* link:ev3-light-sensor/ev3_light_sensor.html[EV3 Light sensor]
+* link:ev3-us-sensor/index.html[EV3 Ultrasonic sensor]
+* link:ev3-ir-sensor/index.html[EV3 Infrared sensor]
+* link:ev3-touch-sensor/index.html[EV3 Touch sensor]
+* link:ev3-light-sensor/index.html[EV3 Light sensor]
 
 ### Proprioceptors sensors
 
 The following sensors are designed to measure the internal state of the robot.
 
-* link:ev3-gyro-sensor/ev3_gyro_sensor.html[EV3 Gyro sensor]
+* link:ev3-gyro-sensor/index.html[EV3 Gyro sensor]
 * link:ev3-motors/ev3_large_motor.html[EV3 Lego Large Motor state]
 * link:ev3-motors/ev3_medium_motor.html[EV3 Lego Medium Motor state]
 * link:battery/index.html[Battery Sensor]
 
 ## Source of sensors
 
-The Bricks has several ways to interact with sensors from many different sources.
+Lego mindstorms ecosystem offer several several sensors to use with your Bricks.
+In the following lists, we will show some examples about sensors available to use with
+this project.
 
 ### LEGO 31313 Kit
 
-This Lego Mindstorms Kit include the following sensors to play with them:
+This Lego Mindstorms Kit includes the following sensors:
 
-* link:ev3-ir-sensor/ev3_ir_sensor.html[EV3 Infrared sensor] x1
-* link:ev3-touch-sensor/ev3_touch_sensor.html[EV3 Touch sensor] x1
-* link:ev3-light-sensor/ev3_light_sensor.html[EV3 Light sensor] x1
+* link:ev3-ir-sensor/index.html[EV3 Infrared sensor] x1
+* link:ev3-touch-sensor/index.html[EV3 Touch sensor] x1
+* link:ev3-light-sensor/index.html[EV3 Light sensor] x1
 * link:ev3-motors/ev3_large_motor.html[EV3 Lego Large Motor state] x2
 * link:ev3-motors/ev3_medium_motor.html[EV3 Medium Motor state] x1
 * link:battery/index.html[Battery Sensor]
@@ -51,17 +53,17 @@ image:images/31313.png[image]
 
 ### LEGO 45544 Kit
 
-This Lego Mindstorms Kit include the following sensors to play with them:
+This Lego Mindstorms Kit includes the following sensors:
 
-* link:ev3-us-sensor/ev3_us_sensor.html[EV3 Ultrasonic sensor] x1
-* link:ev3-touch-sensor/ev3_touch_sensor.html[EV3 Touch sensor] x2
-* link:ev3-light-sensor/ev3_light_sensor.html[EV3 Light sensor] x1
-* link:ev3-gyro-sensor/ev3_gyro_sensor.html[EV3 Gyro sensor] x1
+* link:ev3-us-sensor/index.html[EV3 Ultrasonic sensor] x1
+* link:ev3-touch-sensor/index.html[EV3 Touch sensor] x2
+* link:ev3-light-sensor/index.html[EV3 Light sensor] x1
+* link:ev3-gyro-sensor/index.html[EV3 Gyro sensor] x1
 * link:ev3-motors/ev3_large_motor.html[EV3 Lego Large Motor state] x2
 * link:ev3-motors/ev3_medium_motor.html[EV3 Medium Motor state] x1
 * link:battery/index.html[Battery Sensor]
 
-image:images//45544.png[image]
+image:images/45544.png[image]
 
 ### Dexter Industries BrickPi
 
@@ -70,7 +72,7 @@ The Kit includes the following sensors:
 * link:battery/index.html[Battery Sensor]
 * Grove Adapter (Only for BrickPi3)
 
-image:images//brickpi3.jpg[image]
+image:images/brickpi3.jpg[image]
 
 ### Mindsensors PiStorms
 
@@ -78,7 +80,7 @@ The Kit includes the following sensors:
 
 * link:battery/index.html[Battery Sensor]
 
-image:images//pistorms-v2.jpg[image]
+image:images/pistorms-v2.jpg[image]
 
 ### Mindsensors Sensors
 
@@ -89,18 +91,23 @@ Mindsensors is a classic sensor manufacturer and it is possible use with the Rob
 
 TIP: In the future, the list will grow.
 
-### USB Webcams
+### USB Cameras
 
 USB Cameras is another way to measure the world.
 Using OpenCV, it is possible to manage a webcam with Java.
 
-* link:usb-webcam/index.html[OpenCV & Webcams]
+* link:usb-camera/index.html[USB Cameras]
 
 image:images/logitech-webcam.png[image]
 
 ### Grove Sensors
 
 Grove System, offer a rich set of sensors to measure the environment.
+Grove is a modular, standardized connector prototyping system.
+Grove takes a building block approach to assembling electronics.
+Compared to the jumper or solder based system, it is easier to connect,
+experiment and build and simplifies the learning system,
+but not to the point where it becomes dumbed down.
 
 image:images/grove-system.jpg[image]
 
@@ -112,6 +119,8 @@ The sensors are possible to connect with your brick in the following ways:
 * BrickPi 3: It is possible to connect a sensor directly.
 
 image:images/ev3-grove-sensor-adapter.jpg[image]
+
+Further information about link:http://wiki.seeed.cc/Grove_System/[Grove Sensors]
 
 ### Slamtec Sensors
 

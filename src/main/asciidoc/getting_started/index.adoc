@@ -2,10 +2,10 @@
 
 ## Introduction
 
-Learn or test a new Technology is always a new challenge. This section tries to
-reduce the time invested to install the required software to enjoy with
-`Java` and `Robotics` with the help of the products from Lego Mindstorms ecosystem.
-To start programming Robotics with Java, it is necessary to install some components in your personal computer and your Brick.
+Learn or test a new Technology is always a new challenge.
+This section tries to reduce the time invested to install
+the componentes required on your Personal
+computer and the Brick to enjoy with the robots that you will be create with `Java`.
 
 The project has been designed with the idea that the user creates Java programs in a Personal computer
 and later send the programs to Brick using a remote connections. With this approach, the user will learn the same techniques applied in the industry with Enterprise applications
@@ -15,9 +15,10 @@ but in this case with Robotics programs with Java.
 
 ### Personal computer
 
-Modern environment to development requires always the same stuff:
-a package managers to install software easily, Runtine oriented to the technology, Build system to manage the dependencies and the whole life cycle,
-Integrated development environments IDE & Tools to store code in source code repositories.
+Modern development environments  always require the same stuff:
+a package manager to install software easily, a runtine about the technology,
+a build system to manage the dependencies and the whole life cycle,
+integrated development environments and tools to store code in source code repositories.
 In this project, the components to install are:
 
 - A package manager
@@ -29,20 +30,17 @@ In this project, the components to install are:
 In the section about link:laptop.html[Getting started with your personal computer],
 you will learn how to install all components.
 
-### Brick
+### The brick
 
-The process to install software in the Brick is easier, we only have 2 steps:
-
-- Install a Operating System
-- Install a Java Virtual Machine, JVM
-
+The requirements of the Brick are simple:
+An Linux Operating System and a Java Virtual Machine, JVM.
 If your Brick is a Lego Mindstorms EV3, BrickPi or PiStorms then you could use this project.
 In the section about link:brick.html[Getting started with your Brick],
 you will learn how to install the components.
 
 ## The Next Step
 
-If you are reading this section, **Congratulations**, you have just reached 2 Goals:
+If you are reading this section, **Congratulations**, you have just reached 2 goals:
 
 - You executed the classic Java program `Hello World` in your personal computer
 - You executed some classic Java programs in your Brick.

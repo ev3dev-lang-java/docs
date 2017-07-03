@@ -1,0 +1,66 @@
+# Regulated Motors
+
+## Introduction
+
+### EV3 Large Motor
+
+image:ev3_large_motor.png[ScreenShot]
+
+### EV3 Medium Motor
+
+image:ev3_medium_motor.jpg[ScreenShot]
+
+### NXT Motor
+
+image:nxt-lego-motor.png[ScreenShot]
+
+## How to use the regulated motor
+
+### Move a motor
+
+[source,java]
+----
+include::LargeMotorDemo.java[]
+----
+
+### Forward & Backward
+
+[source,java]
+----
+include::LargeMotorDemo2.java[]
+----
+
+### Test the different stop modes
+
+[source,java]
+----
+include::LargeMotorStopModesExample.java[]
+----
+
+### Multiple motors
+
+[source,java]
+----
+include::MultipleMotorsDemo.java[]
+----
+
+### Motor events
+
+[source,java]
+----
+include::MotorEventTest.java[]
+----
+
+### Rotating a motor
+
+[source,java]
+----
+include::RegulatedMotorRotateDemo.java[]
+----
+
+### Rotating to a specific angle
+
+[source,java]
+----
+include::RegulatedMotorRotateToDemo.java[]
+----

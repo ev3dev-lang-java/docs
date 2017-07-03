@@ -9,7 +9,7 @@ TIP: Is my personal computer ready to write Java programs in general?
 If the answer is **Yes**, you could jump directly to the section
 link:brick.html[Getting started with your Brick] but
 if you didn´t install Java and other components related with this Java development
-in the computer that you are going to use with this project then it is pretty useful that continue reading this document.
+then continue reading this document.
 
 ## The modern Java development environment
 

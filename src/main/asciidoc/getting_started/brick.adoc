@@ -35,6 +35,32 @@ Verify that your Brick has a connection in the same network than your computer
 ssh robot@192.168.1.104
 ----
 
+And you should the following output
+
+[source]
+----
+The authenticity of host '10.0.1.2 (10.0.1.2)' can't be established.
+ECDSA key fingerprint is SHA256:21hHcnrpfwFMNaZcgeR9b5YnJw7q6Eojt0ZQM83Ephk.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.0.1.2' (ECDSA) to the list of known hosts.
+robot@10.0.1.2's password:
+             _____     _
+   _____   _|___ /  __| | _____   __
+  / _ \ \ / / |_ \ / _` |/ _ \ \ / /
+ |  __/\ V / ___) | (_| |  __/\ V /
+  \___| \_/ |____/ \__,_|\___| \_/
+
+Debian jessie on LEGO MINDSTORMS EV3!
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+----
+
+
 If you connected with your brick then you have completed this process and
 now you will have a Brick with a complete Linux distro to run any Programming language.
 

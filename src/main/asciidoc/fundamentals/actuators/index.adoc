@@ -2,93 +2,21 @@
 
 ## Introduction
 
-## Regulated Motors
+An "actuator” can be defined as a device that converts energy
+(in robotics, that energy tends to be electrical)
+into physical motion or a determined output like a visualization
+in a Display or the generation of a Sound.
 
-**EV3 Large Motor**
+## Motors
+
+### Regulated Motors
 
 image:ev3_large_motor.png[ScreenShot]
 
-**EV3 Medium Motor**
+Further information about link:regulated-motors.html[Regulated motors]
 
-image:ev3_medium_motor.jpg[ScreenShot]
-
-**NXT Motor**
-
-image:nxt-lego-motor.png[ScreenShot]
-
-## How to use the regulated motor
-
-### Move a motor
-
-[source,java]
-----
-include::LargeMotorDemo.java[]
-----
-
-### Forward & Backward
-
-[source,java]
-----
-include::LargeMotorDemo2.java[]
-----
-
-### Test the different stop modes
-
-[source,java]
-----
-include::LargeMotorStopModesExample.java[]
-----
-
-### Multiple motors
-
-[source,java]
-----
-include::MultipleMotorsDemo.java[]
-----
-
-### Motor events
-
-[source,java]
-----
-include::MotorEventTest.java[]
-----
-
-### Rotating a motor
-
-[source,java]
-----
-include::RegulatedMotorRotateDemo.java[]
-----
-
-### Rotating to a specific angle
-
-[source,java]
-----
-include::RegulatedMotorRotateToDemo.java[]
-----
-
-## Unregulated Motors
-
-**RCX Motors**
-
-image:rcx-motor.jpg[ScreenShot]
-
-**Lego Technics Motor**
+### Unregulated Motors
 
 image:technic-motor.jpg[ScreenShot]
 
-## How to use the regulated motor
-
-### Move a motor
-
-[source,java]
-----
-include::UnregulatedMotorDemo.java[]
-----
-
-### Move multiple motors
-
-[source,java]
-----
-include::UnregulatedMutipleMotorDemo.java[]
-----
+Further information about link:unregulated-motors.html[Unregulated motors]
