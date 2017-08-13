@@ -2,16 +2,20 @@
 
 ## Introduction
 
-Create your first project is not complicated, for that action, exist 2 alternatives:
+Create your first project is not complicated, the project provides a `Template project`
+using `Gradle` but you could create a new project from Scratch too.
 
-- Create your project from a Template Project
-- Create your project from Scratch
+The advantages of the usage of the Template project are:
 
-## Create your first project with a Gradle template project
+ * Build System configured
+ * Dependencies defined
+ * Tasks defined for the interaction with the Brick
 
-The project provide a Gradle template project ready to run in your favourite Java IDE.
+## Create your first project using the Gradle template project
 
-Visit this link:https://github.com/ev3dev-lang-java/template_project_gradle[Git repository] to download the project:
+The project provide a Gradle template project ready to run in your favourite Java IDE like IntelliJ or Eclipse.
+
+Visit this link:https://github.com/ev3dev-lang-java/template_project_gradle[Git repository] to download the template project:
 
 ```
 git clone https://github.com/ev3dev-lang-java/template_project_gradle.git
@@ -29,6 +33,12 @@ remotes {
         password = 'maker'
     }
 }
+```
+
+to check that the java IDE connect with the brick, execute the following Gradle task:
+
+```
+./gradlew testConnection
 ```
 
 The project are configured to send to the Brick the following example:

@@ -10,8 +10,8 @@ image:images/rangefinder.jpg[image]
 
 In Lego Mindstorms ecosystem, exist 2 Rangefinder sensors:
 
-* link:ev3-us-sensor/ev3_us_sensor.html[EV3 Ultrasonic sensor]
-* link:ev3-ir-sensor/ev3_ir_sensor.html[EV3 Infrared sensor]
+* link:ev3-us-sensor/index.html[EV3 Ultrasonic sensor]
+* link:ev3-ir-sensor/index.html[EV3 Infrared sensor]
 
 **References:**
 

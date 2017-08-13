@@ -17,7 +17,7 @@ This documentation will guide in the way to learn `Robotics` with `Java`.
     - link:./fundamentals/sensors/ev3-rangefinder.html[Rangefinder]
     - link:./fundamentals/sensors/usb-lidar-rplidar/index.html[Laser Scanner]
     - link:./fundamentals/sensors/usb-camera/index.html[Camera]
-    - link:./fundamentals/sensors/ev3-gyro-sensor/index.html[IMU]
+    - link:./fundamentals/sensors/arduino/arduino-9-axes-motion-shield-BNO055.html[IMU]
 * link:./fundamentals/actuators/index.html[Actuators]
     - link:./fundamentals/actuators/regulated-motors.html[Regulated motors]
 
