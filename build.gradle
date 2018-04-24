@@ -14,7 +14,7 @@ asciidoctorj {
 //Wrapper
 task wrapper(type: Wrapper) {
     description = 'Generates gradlew[.bat] scripts'
-    gradleVersion = '3.5'
+    gradleVersion = '4.7'
 }
 
 asciidoctor {
@@ -35,7 +35,7 @@ asciidoctor {
     }
     attributes  'icons': 'font',
                 'title': project.name,
-                'revnumber': '0.7.0-SNAPSHOT',
+                'revnumber': '0.8.0',
                 'toc': 'left',
                 'toc-title':'Table of Contents',
                 'encoding': 'utf-8',

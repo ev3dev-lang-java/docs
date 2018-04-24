@@ -23,6 +23,14 @@ TIP: Debian is a Linux Operating System used in millions of computers on the wor
 This project use Debian delivered by the project `EV3Dev` which provide a interface
 to interact with `Lego Mindstorms EV3 Brick` and other boards compatible like `BrickPi` & `PiStorms`.
 
+EV3Dev support 2 Debian distros:
+
+- Debian Jessie: Stable version.
+- Debian Stretch: Dev version.
+
+In the document link:http://www.ev3dev.org/downloads/[EV3Dev downloads] it is possible to download the latest
+stable version and some snapshots. The snapshot used for last version is: link:https://oss.jfrog.org/list/oss-snapshot-local/org/ev3dev/brickstrap/2018-03-16/[2018-03-16 for EV3 Brick only].
+
 To install `EV3Dev`, follow the link to link:http://www.ev3dev.org/docs/getting-started/[install EV3Dev on your Brick]
 
 ### Test the installation
@@ -82,9 +90,13 @@ For this step exists 2 paths. One path is for EV3 Brick and another path for Bri
 
 ### EV3 Brick
 
-The EV3 Brick was designed with a SOC based on [ARM EABI](https://wiki.debian.org/ArmEabiPort) 
-and the best JVM option for that hardware architecture is the Oracle JRE 8 to install in the brick but, it is not possible to install directly in the brick
- without any human interaction, so you need to download from [here](http://www.oracle.com/technetwork/java/embedded/downloads/javase/javaseemeddedev3-1982511.html)
+The EV3 Brick was designed with a SOC based on [ARM EABI](https://wiki.debian.org/ArmEabiPort).
+Traditionally, the unique available JVM version to run on EV3 was Oracle JRE 8 but all Debian versions
+(Jessie & Stretch) but if you install in your EV3 Brick Debian Stretch, it is possible to Install OpenJDK JRI 10.
+
+#### Install Oracle JRE 8 for Debian Jessie
+
+To install Oracle JRE 8 in the brick you need to download from [here](http://www.oracle.com/technetwork/java/embedded/downloads/javase/javaseemeddedev3-1982511.html)
 and later, copy the file `ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz` to your brick using the command `scp`.
 
 Example:
@@ -95,18 +107,18 @@ scp "./ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" "robot@192.168.1.85:/h
 
 Once, you have the file on the brick, you can continue the Java installation with the installer or do yourself manually.
 
-https://github.com/ev3dev-lang-java/installer
+https://github.com/ev3dev-lang-java/installer/master
 
-#### Using the installer
+#### Install Oracle JRE 8 for Debian Jessie with the installer
 
 ```
 cd /home/robot
 mkdir installer
 cd installer
-wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/develop/installer.sh
+wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/master/installer.sh
 chmod +x installer.sh
 sudo ./installer.sh help
-sudo ./installer.sh
+sudo ./installer.sh java
 ```
 
 #### Manual way
