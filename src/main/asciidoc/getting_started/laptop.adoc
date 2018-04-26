@@ -13,7 +13,7 @@ then continue reading this document.
 
 ## The modern Java development environment
 
-`Java` is possible to run in the most popular desktop Operating Systems like: `OSX`, `Windows` & `Ubuntu`.
+`Java` is possible to run in the most popular desktop Operating Systems like: `Windows`, `OSX` & `Ubuntu`.
 
 The components that you will have to install are:
 
@@ -25,181 +25,13 @@ The components that you will have to install are:
 
 The software listed previously is possible to install manually but
 it is better the usage of a `package installer`
-like `HomeBrew` for OSX or `apt` for Ubuntu.
+like `HomeBrew` for OSX or `apt` for Linux.
 
-### OSX
+Click in the Operating System installed in your personal computer to check the requirements.
 
-If your personal computer is manufactured from Apple, the following instructions will help you.
-
-#### Homebrew, the package manager for OSX
-
-Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple's macOS operating system.
-
-[source]
-----
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-----
-
-To check if you installed Homebrew:
-
-[source]
-----
-brew config
-----
-
-You should view the following output:
-
-[source]
-----
-HOMEBREW_VERSION: 1.2.2
-ORIGIN: https://github.com/Homebrew/brew.git
-HEAD: 54e01d76db34a3a649c79b189873bfd0a52dbc9f
-Last commit: 4 weeks ago
-Core tap ORIGIN: https://github.com/Homebrew/homebrew-core
-Core tap HEAD: 530b7f9b6884bec2a8ea618d0a52c9691cef76bb
-Core tap last commit: 3 weeks ago
-HOMEBREW_PREFIX: /usr/local
-HOMEBREW_REPOSITORY: /usr/local/Homebrew
-HOMEBREW_CELLAR: /usr/local/Cellar
-HOMEBREW_BOTTLE_DOMAIN: https://homebrew.bintray.com
-CPU: quad-core 64-bit ivybridge
-Homebrew Ruby: 2.0.0-p648
-Clang: 8.1 build 802
-Git: 2.11.0 => /Library/Developer/CommandLineTools/usr/bin/git
-Perl: /usr/bin/perl
-Python: /usr/bin/python
-Ruby: /usr/bin/ruby => /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
-Java: 9, 1.8.0_121, 1.8.0_05, 1.7.0_51
-macOS: 10.12.5-x86_64
-Xcode: N/A
-CLT: 8.3.2.0.1.1492020469
-X11: N/A
-----
-
-In the next sections, we will continue using HomeBrew for the rest of installation steps.
-
-TIP: If you have some problem with some concrete installation, you could install manually but it is bettert to unify
-the way to install everything.
-
-Further information about link:https://brew.sh/[Homebrew]
-
-#### Java
-
-To program with Java is necessary to install in your laptop a Java Development Kit (JDK).
-
-A Java Development Kit (JDK) is a program development environment
-for writing Java applications. It consists of a runtime environment that "sits on top" of the operating system layer
-as well as the tools and programming that developers need to compile, debug, and run applications
-written in the Java language.
-
-To begin using Java, it is necessary to install the JDK:
-
-[source]
-----
-brew update
-brew tap caskroom/cask
-brew install Caskroom/cask/java
-----
-
-Once you have installed Java JDK, check the installation:
-
-[source]
-----
-java -version
-----
-
-You should view the following output:
-
-[source]
-----
-java version "1.8.0_121"
-Java(TM) SE Runtime Environment (build 1.8.0_121-b13)
-Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
-----
-
-To check if you are able to compile Java files,
-create a new file with the name of `HelloWorld.java` and copy and paste on it the following content:
-
-[source,java]
-----
-include::./HelloWorld.java[]
-----
-
-Save the file and open in a terminal to type the following commands:
-
-``` java
-javac HelloWorld.java
-java HelloWorld
-```
-
-You should read: `HelloWorld` in the terminal.
-
-Further information about link:https://www.java.com/es/about/whatis_java.jsp[Java]
-
-#### Build Systems (Maven/Gradle)
-
-Modern Java development use dependencies stored on Software Repositories.
-It is a good idea if you install the popular build Systems as `Maven` & `Gradle` for Java.
-This project is modular and it deliver multiple dependencies.
-
-The way to install Maven & Gradle is:
-
-
-[source]
-----
-brew install maven
-brew install gradle
-----
-
-Further information about link:https://maven.apache.org/[Maven] &amp; https://gradle.org/[Gradle].
-
-#### Java IDE
-
-To develop a single Java file, maybe you could use a simple Text Editor
-but current Java IDE offers several funcionalities to
-help you in the process to develop software with Java. In the market, the most popular Java IDE are `IntelliJ` & `Eclipse`.
-
-To install `IntelliJ`:
-
-[source]
-----
-brew cask install intellij-idea
-----
-
-To install `Eclipse`:
-
-[source]
-----
-brew cask install eclipse-java
-----
-
-Further information about link:https://www.jetbrains.com/idea/[IntelliJ] & Eclipse
-
-#### Sources & Repositories (Git & SourceTree)
-
-Git is a popular technology to manage code. Many ideas that you see on Internet are stored on
-Git repositories so manage this technology is necessary.
-
-[source]
-----
-brew cask install sourcetree
-----
-
-Further information about link:https://www.sourcetreeapp.com/[SourceTree]
-
-### Windows
-
-[source]
-----
-PENDING
-----
-
-### Ubuntu
-
-[source]
-----
-PENDING
-----
+- link:laptop_windows.html[Windows]
+- link:laptop_osx.html[OSX]
+- Linux
 
 ++++
 
