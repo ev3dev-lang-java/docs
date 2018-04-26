@@ -32,9 +32,9 @@ The following sensors are designed to measure the internal state of the robot.
 * link:ev3-motors/ev3_medium_motor.html[EV3 Lego Medium Motor state]
 * link:battery/index.html[Battery Sensor]
 
-## Source of sensors
+## LEGO Sensors
 
-Lego mindstorms ecosystem offer several several sensors to use with your Bricks.
+Lego mindstorms ecosystem offers several sensors to use with your Bricks.
 In the following lists, we will show some examples about sensors available to use with
 this project.
 
@@ -91,15 +91,6 @@ Mindsensors is a classic sensor manufacturer and it is possible use with the Rob
 
 TIP: In the future, the list will grow.
 
-### USB Cameras
-
-USB Cameras is another way to measure the world.
-Using OpenCV, it is possible to manage a webcam with Java.
-
-* link:usb-camera/index.html[USB Cameras]
-
-image:images/logitech-webcam.png[image]
-
 ### Grove Sensors
 
 Grove System, offer a rich set of sensors to measure the environment.
@@ -122,12 +113,31 @@ image:images/ev3-grove-sensor-adapter.jpg[image]
 
 Further information about link:http://wiki.seeed.cc/Grove_System/[Grove Sensors]
 
-### Slamtec Sensors
+## USB Sensors
+
+### Cameras
+
+USB Cameras is another way to measure the world.
+Using OpenCV, it is possible to manage a webcam with Java.
+
+* link:usb-camera/index.html[USB Cameras]
+
+image:images/logitech-webcam.png[image]
+
+### LIDAR Sensors
 
 * link:usb-rplidar/index.html[2D LIDAR RPlidar A1]
 * 2D LIDAR RPlidar A2
 
 image:images/slamtec-rplidar-a2.png[image]
+
+### IMU Sensors
+
+image:images/Arduino-9-Axes-Motion-Shield.jpg[image]
+
+### GPS Sensors
+
+image:images/usb-gps.jpg[image]
 
 ++++
 
