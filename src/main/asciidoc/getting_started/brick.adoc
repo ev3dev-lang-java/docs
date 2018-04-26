@@ -1,37 +1,49 @@
-# Getting Started on your brick
+# Getting Started with your Brick
 
 ## Introduction
 
-In the third generation of Lego Mindstorms exist
-multiple Bricks with compatibility with Sensors & Actuators from
-Lego Mindstorms ecosystem. This fact is a real software engineering challenge
-to manage all Bricks, but for that purpose appeared `EV3Dev`.
+A Mindstorms Brick requires an environment to run a Java Virtual Machine.
+The software to install is:
 
-EV3Dev provides a Debian Installation for the Bricks and
-a set of utilities to interact with the hardware in an easy way.
+- Operating System
+- Java Virtual Machine
 
-The steps to do in your Brick are:
+## Operating System
 
-- Install a Operating System
-- Install a Java Virtual Machine, JVM
+An operating system (OS) is system software that manages computer hardware and software resources
+and provides common services for computer programs.
 
-## Install an Operating System
-
-Previously, we mentioned that `EV3Dev` provides a Debian image to install in a `microSD`.
+For LEGO Mindstorms ecosystem, `EV3Dev` is the best option for this purpose,
+it provides a `Debian image` compatible with LEGO Mindsotorms EV3, BrickPi & Pistorms.
 
 TIP: Debian is a Linux Operating System used in millions of computers on the world.
 This project use Debian delivered by the project `EV3Dev` which provide a interface
 to interact with `Lego Mindstorms EV3 Brick` and other boards compatible like `BrickPi` & `PiStorms`.
 
-EV3Dev support 2 Debian distros:
+Debian is a stable project and it has link:https://www.debian.org/releases/[released] multiple versions.
+`EV3Dev` supports the following versions:
 
-- Debian Jessie: Stable version.
-- Debian Stretch: Dev version.
+- Debian Jessie
+- Debian Stretch
 
+To install any Debian version, you will need to acquire a MicroSD Card to insert in the Brick.
+
+image:microsd.jpg[image]
+
+### Stable version: Debian Jessie
+
+EV3Dev has an excellent step by step guide to install the Debian image in the Brick.
+Please, follow the link to link:http://www.ev3dev.org/docs/getting-started/[install EV3Dev on your Brick]
+
+### Development version: Debian Stretch
+
+Debian Stretch for EV3Dev is not stable but it has new features to use.
 In the document link:http://www.ev3dev.org/downloads/[EV3Dev downloads] it is possible to download the latest
-stable version and some snapshots. The snapshot used for last version is: link:https://oss.jfrog.org/list/oss-snapshot-local/org/ev3dev/brickstrap/2018-03-16/[2018-03-16 for EV3 Brick only].
+stable version and some snapshots.
 
-To install `EV3Dev`, follow the link to link:http://www.ev3dev.org/docs/getting-started/[install EV3Dev on your Brick]
+The snapshot used in the last version of this project is: link:https://oss.jfrog.org/list/oss-snapshot-local/org/ev3dev/brickstrap/2018-03-16/[2018-03-16].
+Current Debian Stretch support is for EV3 Brick only. If you have BrickPi or PiStorms, It is better if you use the classic
+Debian Jessie image at the moment.
 
 ### Test the installation
 
@@ -83,7 +95,7 @@ sudo apt-get dist-upgrade
 sudo reboot now
 ```
 
-## Install Java on your brick
+## Java Virtual Machine
 
 Any Java program run on a JVM (Java Virtual Machine) so, it is necessary to install it.
 For this step exists 2 paths. One path is for EV3 Brick and another path for BrickPi/PiStorms users.
@@ -146,7 +158,7 @@ sudo ./installer.sh help
 sudo ./installer.sh
 ```
 
-## Test your installation
+### Test your installation
 
 Once you have your bricks with the JVM, test the installation is easy.
 With the remote connection opened type:

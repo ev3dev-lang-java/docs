@@ -33,6 +33,13 @@ Click in the Operating System installed in your personal computer to check the r
 - link:laptop_osx.html[OSX]
 - Linux
 
+## Next step
+
+Once you have a Java environment available to develop software,
+we will review the requirements for your Mindstorms Brick.
+
+Click link:brick.html[here] to continue.
+
 ++++
 
 <script>
