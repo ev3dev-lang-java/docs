@@ -100,7 +100,7 @@ Now, you have Linux in your Brick!
 ## Java Virtual Machine
 
 Java programs need a JVM (Java Virtual Machine) installed in the Brick.
-Depending of the Hardware and the Debian version, you will have different options.
+Depending of the Hardware and the Debian version, you will have different options to install it.
 
 ### EV3 Brick
 
@@ -111,22 +111,38 @@ Available JVM:
 - Oracle JRE 8 for Debian Jessie
 - Open JDK 10 for Debian Stretch
 
+Using this project, the developer has 3 alternatives to install a JVM:
+
+- Manual
+- Using the project Installer
+- Using Gradle tasks from Template Project which interacts with Installer
+
+But not all alternatives are enabled for all cases.
+
 #### Debian Jessie
 
-##### Manual way
+##### Manual
 
-To install Oracle JRE 8 in the brick you need to download from [here](http://www.oracle.com/technetwork/java/embedded/downloads/javase/javaseemeddedev3-1982511.html)
+On Debian Jessie + EV3 Brick the JVM available to use is Oracle JRE 8.
+To install this JVM in the Brick you need to download from [here](http://www.oracle.com/technetwork/java/embedded/downloads/javase/javaseemeddedev3-1982511.html)
 and later, copy the file `ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz` to your brick using the command `scp`.
 
-Example:
+*Example:*
 
 ```
 scp "./ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" "robot@192.168.1.85:/home/robot"
 ```
 
-Once, you have the file on the brick, you can continue the Java installation with the installer or do yourself manually.
+Once, you have the file on the Brick, you can continue the Java installation with the installer or do yourself manually.
 
-https://github.com/ev3dev-lang-java/installer/master
+If you continue installing the JVM in a manual way, you will have to execute the following statements in a Terminal:
+
+```
+sudo tar -zxvf "/home/robot/ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" -C /opt
+sudo update-alternatives --install /usr/bin/java java /opt/ejdk1.8.0/linux_arm_sflt/jre/bin/java 8
+```
+
+Now, you have Java on your EV3 Brick
 
 ##### Installer
 
@@ -140,20 +156,60 @@ sudo ./installer.sh help
 sudo ./installer.sh java
 ```
 
-#### Manual way
+##### Gradle Template project
+
+This option is not available for Debian Jessie
+
+#### Debian Stretch
+
+In Debian Jessie, we could build OpenJDK 10 for EV3 so the Java installation experience is improved so much.
+
+##### Manual way
 
 ```
-sudo tar -zxvf "/home/robot/ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" -C /opt
-sudo update-alternatives --install /usr/bin/java java /opt/ejdk1.8.0/linux_arm_sflt/jre/bin/java 1
+wget -N https://github.com/ev3dev-lang-java/openjdk-ev3/releases/download/v0.5.0/jri10-ev3.tar.gz
+sudo tar -zxvf jri10-ev3.tar.gz -C /opt
+mv /opt/jri-ev3/ /opt/jri-10-build-050
+update-alternatives --install /usr/bin/java java /opt/jri-10-build-050/bin/java 10
 ```
 
-Now, you have Java on your EV3 Brick
+##### Installer
+
+```
+cd /home/robot
+mkdir installer
+cd installer
+wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/master/installer.sh
+chmod +x installer.sh
+sudo ./installer.sh help
+sudo ./installer.sh java
+```
+
+##### Gradle Template project
+
+Execute the Tasks:
+
+- getInstaller
+- installJava
+- javaVersion
 
 ### BrickPi 3 / BrickPi+ / PiStorms
 
-Using the installer, it is possible to automate everything:
+Bricks using Raspberry Pi hardware has more CPU/Memory capacity and it is possible to install from Debian Packages.
 
-https://github.com/ev3dev-lang-java/installer
+At the moment, the unique support is on Debian Jessie.
+
+#### Debian Jessie
+
+##### Manual
+
+apt-key adv --recv-key --keyserver keyserver.ubuntu.com EEA14886
+echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
+echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
+##### Installer
 
 ```
 cd /home/robot
@@ -165,6 +221,10 @@ sudo ./installer.sh help
 sudo ./installer.sh
 ```
 
+##### Gradle Template project
+
+This option is not available yet.
+
 ### Test your installation
 
 Once you have your bricks with the JVM, test the installation is easy.
@@ -174,7 +234,7 @@ With the remote connection opened type:
 java -version
 ```
 
-Now, your Brick is ready to receive your Java programs.
+Now, your Brick is ready to run your Java programs.
 
 ++++
 
