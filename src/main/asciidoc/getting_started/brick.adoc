@@ -95,18 +95,25 @@ sudo apt-get dist-upgrade
 sudo reboot now
 ```
 
+Now, you have Linux in your Brick!
+
 ## Java Virtual Machine
 
-Any Java program run on a JVM (Java Virtual Machine) so, it is necessary to install it.
-For this step exists 2 paths. One path is for EV3 Brick and another path for BrickPi/PiStorms users.
+Java programs need a JVM (Java Virtual Machine) installed in the Brick.
+Depending of the Hardware and the Debian version, you will have different options.
 
 ### EV3 Brick
 
-The EV3 Brick was designed with a SOC based on [ARM EABI](https://wiki.debian.org/ArmEabiPort).
-Traditionally, the unique available JVM version to run on EV3 was Oracle JRE 8 but all Debian versions
-(Jessie & Stretch) but if you install in your EV3 Brick Debian Stretch, it is possible to Install OpenJDK JRI 10.
+EV3 Brick has a SOC from 2010 and it is a bit Old. [ARM EABI](https://wiki.debian.org/ArmEabiPort)
 
-#### Install Oracle JRE 8 for Debian Jessie
+Available JVM:
+
+- Oracle JRE 8 for Debian Jessie
+- Open JDK 10 for Debian Stretch
+
+#### Debian Jessie
+
+##### Manual way
 
 To install Oracle JRE 8 in the brick you need to download from [here](http://www.oracle.com/technetwork/java/embedded/downloads/javase/javaseemeddedev3-1982511.html)
 and later, copy the file `ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz` to your brick using the command `scp`.
@@ -121,7 +128,7 @@ Once, you have the file on the brick, you can continue the Java installation wit
 
 https://github.com/ev3dev-lang-java/installer/master
 
-#### Install Oracle JRE 8 for Debian Jessie with the installer
+##### Installer
 
 ```
 cd /home/robot
