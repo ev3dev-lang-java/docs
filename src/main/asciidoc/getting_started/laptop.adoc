@@ -2,20 +2,16 @@
 
 ## Introduction
 
-This project is about the creation of `Java` programs for `Robots`, so the first question that you need to answer is:
-
-TIP: Is my personal computer ready to write Java programs in general?
-
-If the answer is **Yes**, you could jump directly to the section
-link:brick.html[Getting started with your Brick] but
-if you didn´t install Java and other components related with this Java development
-then continue reading this document.
+In this section, you will learn how to install a Modern Java development environment.
+If previously you have developed with Java, maybe you could skip this section and put the focus
+on the link:brick.html[Brick] requirements.
 
 ## The modern Java development environment
 
-`Java` is possible to run in the most popular desktop Operating Systems like: `Windows`, `OSX` & `Ubuntu`.
+`Java` is a General purpose programming language and is possible to run
+in the most popular desktop Operating Systems like: `Windows`, `OSX` & `Ubuntu`.
 
-The components that you will have to install are:
+A modern Java development environment require the following elements to be installed in your computer:
 
 - A package manager
 - Java JDK
@@ -27,6 +23,11 @@ The software listed previously is possible to install manually but
 it is better the usage of a `package installer`
 like `HomeBrew` for OSX or `apt` for Linux.
 
+TIP: A package manager or package management system is a collection of software tools that automates the process of
+installing, upgrading, configuring, and removing computer programs for a computer's operating system
+in a consistent manner.
+Source: link:https://en.wikipedia.org/wiki/Package_manager[Wikipedia]
+
 Click in the Operating System installed in your personal computer to check the requirements.
 
 - link:laptop_windows.html[Windows]
@@ -35,10 +36,7 @@ Click in the Operating System installed in your personal computer to check the r
 
 ## Next step
 
-Once you have a Java environment available to develop software,
-we will review the requirements for your Mindstorms Brick.
-
-Click link:brick.html[here] to continue.
+Continue in the section about link:brick.html[Getting Started with your Brick]
 
 ++++
 

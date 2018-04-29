@@ -54,13 +54,20 @@ The requirements to execute Java programs in any Brick are the same that in any 
 In the section about link:brick.html[Getting started with your Brick],
 you will learn how to install the components.
 
+## Template project
+
+Exist a ready to use link:https://github.com/ev3dev-lang-java/template_project_gradle[Template project]
+which help you in the process to create new project with your favourite Java IDE. Review the
+document about link:create-your-first-project.html[Getting started with your first project] to learn
+how to use this Template project.
+
+.Maven Template project
+[NOTE]
+In the future, we will add a new Maven project with the same purpose.
+
 ## The Next Step
 
-If you are reading this section, **Congratulations**, you have just reached 2 goals:
+Continue with the next section about: link:../#fundamentals-of-robotics[Fundamentals of Robotics]
 
-- You executed the classic Java program `Hello World` in your personal computer
-- You executed some classic Java programs in your Brick.
-
-In that case, continue with the next section about: `Fundamentals of Robotics`
 but if you stopped in some point, read previous documents again and if the problem
  continues, create a link:https://github.com/ev3dev-lang-java/ev3dev-lang-java/issues/[Support issue on the project].

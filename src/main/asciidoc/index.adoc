@@ -1,6 +1,6 @@
 # EV3Dev-Java / docs
 
-This documentation will guide in the way to learn `Robotics` with `Java`.
+This documentation will guide in the way to learn `Robotics` with `Java` with Mindstorms Bricks.
 
 ## Getting Started
 

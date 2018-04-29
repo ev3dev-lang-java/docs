@@ -63,6 +63,9 @@ Modern Java development use dependencies stored on Software Repositories.
 It is a good idea if you install the popular build Systems as `Maven` & `Gradle` for Java.
 This project is modular and it deliver multiple dependencies.
 
+- link:https://maven.apache.org/install.html[How to install Maven on Windows]
+- link:https://docs.gradle.org/current/userguide/installation.html[How to install Gradle on Windows]
+
 Further information about link:https://maven.apache.org/[Maven] &amp; https://gradle.org/[Gradle].
 
 ### Java IDE

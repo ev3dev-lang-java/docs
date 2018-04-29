@@ -236,6 +236,10 @@ java -version
 
 Now, your Brick is ready to run your Java programs.
 
+## Next Step
+
+Continue in the section about link:create-your-first-project.html[Create your first project]
+
 ++++
 
 <script>

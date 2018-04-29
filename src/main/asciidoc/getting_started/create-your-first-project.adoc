@@ -77,17 +77,21 @@ To start a new project with this library, add the following repository and depen
 <dependency>
     <groupId>com.github.ev3dev-lang-java</groupId>
     <artifactId>ev3dev-lang-java</artifactId>
-    <version>v0.6.1</version>
+    <version>0.7.0</version>
 </dependency>
 ```
 	
-Further information about link:https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1[the dependency]
+Further information about link:https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/0.7.0[the dependency]
 
 ## Playing with more examples
 
 The project has a repository with several examples about the usage of the different libraries.
 
 Visit the link:https://github.com/ev3dev-lang-java/examples[repository about examples] to download and test more examples.
+
+## The Next Step
+
+Continue with the next section about: link:../#fundamentals-of-robotics[Fundamentals of Robotics]
 
 ++++
 
