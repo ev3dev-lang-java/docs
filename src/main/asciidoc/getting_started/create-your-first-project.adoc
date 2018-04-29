@@ -80,7 +80,7 @@ To deploy the example on your brick, open a `terminal` and type:
 ./gradlew deployAndRun
 ```
 
-### Add your new program
+### Add a new Java program
 
 Once you feel comfortable with the Template project and the Gradle Tasks, you could feel the need to add your
 own program. In this case, add in the project the new Java file like this one:
