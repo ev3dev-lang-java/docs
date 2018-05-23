@@ -104,13 +104,9 @@ Depending of the Hardware and the Debian version, you will have different option
 
 ### EV3 Brick
 
-EV3 Brick has a SOC from 2010 and it is a bit Old.
-Further information about link:https://wiki.debian.org/ArmEabiPort[ARM EABI architecture].
+For EV3, it is possible to install the following JVM:
 
-Available JVM:
-
-- Oracle JRE 8 for Debian Jessie
-- Open JDK 10 for Debian Stretch
+- Open JDK 10 for Debian
 
 Using this project, the developer has 3 alternatives to install a JVM:
 
@@ -118,60 +114,7 @@ Using this project, the developer has 3 alternatives to install a JVM:
 - Using the project Installer
 - Using Gradle tasks from Template Project which interacts with Installer
 
-WARNING: Not all alternatives are enabled for all cases. Review the documentation carefully and if you
-continue with doubts, link:https://github.com/ev3dev-lang-java/ev3dev-lang-java/issues[open a support issue] to clarify and improve the documentation.
-
-#### Debian Jessie
-
-##### Manual
-
-On Debian Jessie + EV3 Brick the JVM available to use is Oracle JRE 8.
-To install this JVM in the Brick you need to download from link:http://www.oracle.com/technetwork/java/embedded/downloads/javase/javaseemeddedev3-1982511.html[here]
-and later, copy the file `ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz` to your brick using the command `scp`.
-
-*Example:*
-
-```
-scp "./ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" "robot@192.168.1.85:/home/robot"
-```
-
-Once, you have the file on the Brick, execute the following statements in a Terminal to unzip and
-enable the `java` command in the system:
-
-```
-sudo tar -zxvf "/home/robot/ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" -C /opt
-sudo update-alternatives --install /usr/bin/java java /opt/ejdk1.8.0/linux_arm_sflt/jre/bin/java 8
-```
-
-*Now, you have Java on your EV3 Brick!*
-
-##### Installer
-
-Using the project link:https://github.com/ev3dev-lang-java/installer[Installer] is possible to automate
-some operations like Java installation once Oracle JRE 8 zip is on the brick on path: `/home/robot/`
-
-```
-cd /home/robot
-mkdir installer
-cd installer
-wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/master/installer.sh
-chmod +x installer.sh
-sudo ./installer.sh help
-sudo ./installer.sh
-```
-
-##### Gradle Template project
-
-WARNING: This option is not available for Debian Jessie at the moment.
-
-#### Debian Stretch
-
-In Debian Stretch, we are able to build `OpenJDK 10` for `EV3` so the Java installation experience is improved because
-it is possible to automate the whole Java instalation process.
-
-Now, it is possible to download OpenJDK from this link:https://github.com/ev3dev-lang-java/openjdk-ev3/[repository].
-
-##### Manual way
+#### Manual
 
 Using the terminal, execute the following statements on a remote connection session from your EV3 Brick to
 install OpenJDK on your brick.
@@ -183,7 +126,9 @@ mv /opt/jri-ev3/ /opt/jri-10-build-050
 update-alternatives --install /usr/bin/java java /opt/jri-10-build-050/bin/java 10
 ```
 
-##### Installer
+*Now, you have Java on your EV3 Brick!*
+
+#### Installer
 
 Using the terminal, execute the following statements on a remote connection session from your EV3 Brick to
 to execute the installer.
@@ -199,7 +144,7 @@ sudo ./installer.sh help
 sudo ./installer.sh java
 ```
 
-##### Gradle Template project
+#### Gradle Template project
 
 The template project provides some Gradle tasks to interact with Installer project to install Java.
 The available tasks:

@@ -1,4 +1,3 @@
-# ev3dev-lang-java / docs
 
 This is the repository about the documentation about the project.
 
