@@ -55,3 +55,10 @@ defaultTasks 'asciidoctor'
 liveReload {
     docRoot asciidoctor.outputDir.canonicalPath
 }
+
+task serve << {
+    SimpleHttpFileServerFactory factory = new SimpleHttpFileServerFactory()
+    HttpFileServer server = factory.start(new File("./build/docs/html5"), 8080)
+    println("Server Started on 8080 ctrc+c to kill it")
+    java.lang.Thread.sleep(Long.MAX_VALUE);
+}

@@ -21,12 +21,12 @@ Finally, create another terminal to serve the contents:
 
 [source]
 ----
-python -m SimpleHTTPServer 8000
+./gradlew serve
 ----
 
 If you open the document in a Web browser with the live reload plugin, you could see the changes.
 
 [source]
 ----
-http://localhost:8000/build/docs/html5/
+http://localhost:8080/index.html
 ----
