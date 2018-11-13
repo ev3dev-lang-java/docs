@@ -1,10 +1,57 @@
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.0'
-    }
+plugins {
+    id 'org.asciidoctor.convert' version '1.5.3'
+    id 'org.kordamp.gradle.livereload' version '0.2.1'
 }
 
-apply plugin: "org.asciidoctor.gradle.asciidoctor"
+apply plugin: 'org.asciidoctor.convert'
+apply plugin: 'org.kordamp.gradle.livereload'
+
+asciidoctorj {
+    version = '1.5.5'
+}
+
+//Wrapper
+task wrapper(type: Wrapper) {
+    description = 'Generates gradlew[.bat] scripts'
+    gradleVersion = '4.7'
+}
+
+asciidoctor {
+    description = project.description
+    logDocuments = true
+    backends 'html5'
+    sourceDir = file('src/main/asciidoc')
+    sources {
+        include '**/*.adoc'
+    }
+    resources {
+        from(sourceDir) {
+            include '**/*.png'
+            include '**/*.jpg'
+            include '**/*.java'
+        }
+        into '.'
+    }
+    attributes  'icons': 'font',
+                'title': project.name,
+                'revnumber': '0.8.0',
+                'toc': 'left',
+                'toc-title':'Table of Contents',
+                'encoding': 'utf-8',
+                'linkcss': true,
+                'idprefix':'',
+                'idseparator':'-',
+                'numbered': true,
+                'linkattrs': true,
+                //'source-highlighter': 'highlightjs',
+                'source-highlighter': 'prettify'
+                //'docinfodir': 'docinfo',
+                //'docinfo': 'shared'
+    outputDir = file('build/docs')
+}
+
+defaultTasks 'asciidoctor'
+
+liveReload {
+    docRoot asciidoctor.outputDir.canonicalPath
+}

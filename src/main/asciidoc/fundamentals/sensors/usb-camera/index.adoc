@@ -1,0 +1,12 @@
+# USB Webcam
+
+## Introduction
+
+image:logitech-webcam.png[image]
+
+## How to use the sensor
+
+[source,java]
+----
+include::OpenCVTest.java[]
+----

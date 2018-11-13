@@ -1,0 +1,52 @@
+# Getting Started with your personal computer
+
+## Introduction
+
+In this section, you will learn how to install a Modern Java development environment.
+If previously you have developed with Java, maybe you could skip this section and put the focus
+on the link:brick.html[Brick] requirements.
+
+## The modern Java development environment
+
+`Java` is a General purpose programming language and is possible to run
+in the most popular desktop Operating Systems like: `Windows`, `OSX` & `Ubuntu`.
+
+A modern Java development environment require the following elements to be installed in your computer:
+
+- A package manager
+- Java JDK
+- Build Systems (Maven & Gradle)
+- Java IDE (IntelliJ or Eclipse)
+- Sources & Repositories (Git & SourceTree)
+
+The software listed previously is possible to install manually but
+it is better the usage of a `package installer`
+like `HomeBrew` for OSX or `apt` for Linux.
+
+TIP: A package manager or package management system is a collection of software tools that automates the process of
+installing, upgrading, configuring, and removing computer programs for a computer's operating system
+in a consistent manner.
+Source: link:https://en.wikipedia.org/wiki/Package_manager[Wikipedia]
+
+Click in the Operating System installed in your personal computer to check the requirements.
+
+- link:laptop_windows.html[Windows]
+- link:laptop_osx.html[OSX]
+- Linux
+
+## Next step
+
+Continue in the section about link:brick.html[Getting Started with your Brick]
+
+++++
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+++++

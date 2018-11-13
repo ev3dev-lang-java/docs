@@ -1,0 +1,68 @@
+# What is a Robot?
+
+## Definition
+
+A Robot is a machine programmable by a `Control system` capable of carrying out
+a series of actions automatically. Robots can be autonomous or
+semi-autonomous
+
+https://en.wikipedia.org/wiki/Robot
+
+## Related concepts
+
+### Machine
+
+A machine is a tool containing one or more parts that uses energy to
+perform an intended action. Machines are usually powered by chemical,
+thermal, or electrical means, and are often motorized.
+
+https://en.wikipedia.org/wiki/Machine
+
+### Autonomy
+
+Autonomy or Autonomous behavior is a contentious term in reference to
+unmanned vehicles due to the poor understanding of whether something
+acting without outside commands is doing so through its own ability to
+make decisions or through a method of decision making pre-programmed
+into it.
+
+https://en.wikipedia.org/wiki/Autonomy#Robotics
+
+### Energy
+
+In physics, energy is the property that must be transferred to an object
+in order to perform work on – or to heat – the object, and can be
+converted in form, but not created or destroyed.[
+
+https://en.wikipedia.org/wiki/Energy
+
+In the project, it is possible to measure the remaining energy that your robot has in the batteries:
+
+[source,java]
+----
+include::BatteryExample.java[]
+----
+
+### Technology
+
+Technology is the collection of
+techniques, skills, methods and processes used in the production of
+goods or services or in the accomplishment of objectives, such as
+scientific investigation. Technology can be the knowledge of techniques,
+processes, and the like, or it can be embedded in machines which can be
+operated without detailed knowledge of their workings.
+
+https://en.wikipedia.org/wiki/Technology
+
+++++
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+++++

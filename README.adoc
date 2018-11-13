@@ -1,0 +1,32 @@
+
+This is the repository about the documentation about the project.
+
+## Local development
+
+To test in local, in the terminal view of Intellij execute:
+
+[source]
+----
+./gradlew -t asciidoctor
+----
+
+Later, create another terminal tab and execute:
+
+[source]
+----
+./gradlew livereload
+----
+
+Finally, create another terminal to serve the contents:
+
+[source]
+----
+python -m SimpleHTTPServer 8000
+----
+
+If you open the document in a Web browser with the live reload plugin, you could see the changes.
+
+[source]
+----
+http://localhost:8000/build/docs/html5/
+----

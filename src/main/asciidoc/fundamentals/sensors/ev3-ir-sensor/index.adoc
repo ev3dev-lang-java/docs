@@ -1,0 +1,50 @@
+= EV3 Infrared Sensor
+
+## Introduction
+
+The digital EV3 Infrared Seeking Sensor detects proximity to the robot and reads signals
+emitted by the EV3 Infrared Beacon. Some features about this sensor:
+
+* Proximity measurement of approximately 50-70 cm
+* Working distance from the beacon of up to two meters
+* Supports four signal channels
+* Receives IR remote commands
+
+image:./ev3_ir_sensor.png[image]
+
+## How to use the sensor
+
+### Measure distances
+
+[source,java]
+----
+include::./IRSensorDemo.java[]
+----
+
+### Detect a beacon
+
+[source,java]
+----
+include::./IRSensorDemo2.java[]
+----
+
+### Detect commands from a remote beacon
+
+[source,java]
+----
+include::./IRSensorDemo3.java[]
+----
+
+
+++++
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+++++

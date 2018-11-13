@@ -1,0 +1,67 @@
+# The robot architecture
+
+## Introduction
+
+Any Robot is a combination of Software & Hardware.
+The `Architecture` of any robot is based on the following components:
+
+* Control System
+* Sensors
+* Actuators
+* Power supply
+
+### Control System
+
+The pure definition of a `Control system` is:
+
+TIP: "A control system manages, commands, directs or regulates the behaviour of other devices or systems."
+
+In a Mindstorms context, the Control System is the Brick we use to create Robots.
+
+image:ev3-brick.png[image]
+
+In the third generation of Lego Mindstorms, it is possible to use Raspberry Pi to manage Sensors & Actuators from
+Lego Mindstorms ecosystem:
+
+image:brickpi3.jpg[image]
+
+### Sensors
+
+Sensors measure a physical quantity, and convert it into a usable signal for your control systen.
+When you are designing the robot it is important to choose the correct sensors to enable it to be aware of
+its environment and perform the tasks required.
+
+In a Mindstorms context, a Sensor is the EV3 IR Sensor which is able to detect objects and detect the EV3 Beacon.
+
+image:ev3_ir_sensor.png[image]
+
+### Actuators
+
+An "actuator” can be defined as a device that converts energy (in robotics, that energy tends to be electrical)
+into physical motion or a determinated output like a visualization in a Display or the generation of a Sound.
+
+In a Mindstorms context, an actuator is the EV3 Large Motor:
+
+image:ev3_large_motor.png[image]
+
+### Power supply
+
+An electric battery is a device consisting of one or more electrochemical cells with external connections
+provided to power electrical devices.
+
+In a Mindstorms context, one example about Battery is the rechargeable EV3 Battery:
+
+image:ev3-battery.jpg[image]
+
+++++
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+++++

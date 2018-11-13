@@ -1,0 +1,30 @@
+# EV3 Touch sensor
+
+## Introduction
+
+The analog EV3 Touch Sensor is a simple but exceptionally precise tool that detects when its front button is pressed or
+ released and is able to count single and multiple presses.
+
+image:./ev3_touch_sensor.png[image]
+
+## How to use the sensor
+
+### isPressed?
+
+[source,java]
+----
+include::./TouchSensorDemo.java[]
+----
+
+++++
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+++++

@@ -1,0 +1,40 @@
+# EV3Dev-Java / docs
+
+This documentation will guide in the way to learn `Robotics` with `Java` with Mindstorms Bricks.
+
+## Getting Started
+
+* link:./getting_started/index.html[Introduction]
+* link:./getting_started/laptop.html[Getting started with your personal computer]
+* link:./getting_started/brick.html[Getting started with your Brick]
+* link:./getting_started/create-your-first-project.html[Getting started with your first project]
+
+## Fundamentals of Robotics
+
+* link:./fundamentals/what-is-a-robot.html[What is a robot?]
+* link:./fundamentals/the-robot-architecture.html[The robot architecture]
+* link:./fundamentals/sensors/index.html[Sensors]
+    - link:./fundamentals/sensors/ev3-rangefinder.html[Rangefinder]
+    - link:./fundamentals/sensors/usb-lidar-rplidar/index.html[Laser Scanner]
+    - link:./fundamentals/sensors/usb-camera/index.html[Camera]
+    - link:./fundamentals/sensors/arduino/arduino-9-axes-motion-shield-BNO055.html[IMU]
+* link:./fundamentals/actuators/index.html[Actuators]
+    - link:./fundamentals/actuators/regulated-motors.html[Regulated motors]
+
+## About the project
+
+* link:./about/ev3dev-java.html[What is EV3Dev-java?]
+* link:./about/ev3dev-compatibility.html[Compatibility table]
+
+++++
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+++++

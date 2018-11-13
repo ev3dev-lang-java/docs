@@ -1,0 +1,27 @@
+# Unregulated Motors
+
+## Introduction
+
+### RCX Motors
+
+image:rcx-motor.jpg[ScreenShot]
+
+### Lego Technics Motor
+
+image:technic-motor.jpg[ScreenShot]
+
+## How to use the regulated motor
+
+### Move a motor
+
+[source,java]
+----
+include::UnregulatedMotorDemo.java[]
+----
+
+### Move multiple motors
+
+[source,java]
+----
+include::UnregulatedMutipleMotorDemo.java[]
+----

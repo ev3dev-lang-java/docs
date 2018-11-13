@@ -1,0 +1,43 @@
+# Compatibility table
+
+## Summary
+
+This table is a summary of the compatibility of all Sensors & Actuators in relation to the Bricks.
+
+|===
+|Element |EV3 |Brickpi 3 |BrickPi+ |PiStorms v2
+|Voltage: |Yes |Yes |Yes |Yes
+| Current: | Yes | - | - | -
+| Regulated Motors: | Yes | Yes | Yes | Yes
+| Unregulated Motors: | Yes | - | - | -
+| Rotate methods: | Yes | - | - | -
+| eSpeak | Yes | - |- | -
+| Light Sensor | Yes | Yes | Yes | Yes
+| Touch Sensor | Yes | Yes | Yes | Yes
+| Gyro Sensor Angle | Yes | Yes | Yes | -
+| Gyro Sensor Angle &amp; Rate | Yes | Yes | - | -
+| IR Sensor Distance | Yes | Yes | Yes | -
+| IR Beacon | Yes | Yes | - | -
+| IR Remote | Yes | Yes | - | -
+| US Sensor Distance | Yes | Yes | Yes | -
+|===
+
+**References**
+
+* https://www.cs.cmu.edu/~chuck/robotpg/robofaq/9.html
+* http://www.yourarticlelibrary.com/robots/robots-5-important-components-of-robots/5692/
+* http://sciencing.com/main-parts-robot-7403157.html
+* http://www.mind.ilstu.edu/curriculum/medical_robotics/parts_of_robots.php
+
+++++
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+++++

@@ -1,0 +1,222 @@
+# Getting Started with your Brick
+
+## Introduction
+
+A Mindstorms Brick requires an environment to run a Java Virtual Machine.
+The software to install is:
+
+- Operating System
+- Java Virtual Machine
+
+## Operating System
+
+An operating system (OS) is system software that manages computer hardware and software resources
+and provides common services for computer programs.
+
+For LEGO Mindstorms ecosystem, `EV3Dev` is the best option for this purpose,
+it provides a `Debian image` compatible with LEGO Mindsotorms EV3, BrickPi & Pistorms.
+
+TIP: Debian is a Linux Operating System used in millions of computers on the world.
+This project use Debian delivered by the project `EV3Dev` which provide a interface
+to interact with `Lego Mindstorms EV3 Brick` and other boards compatible like `BrickPi` & `PiStorms`.
+
+Debian is a stable project and it has link:https://www.debian.org/releases/[released] multiple versions.
+`EV3Dev` supports the following versions:
+
+- Debian Jessie
+- Debian Stretch
+
+To install any Debian version, you will need to acquire a MicroSD Card to insert in the Brick.
+
+image:microsd.jpg[image]
+
+### Stable version: Debian Jessie
+
+EV3Dev has an excellent step by step guide to install the Debian image in the Brick.
+Please, follow the link to link:http://www.ev3dev.org/docs/getting-started/[install EV3Dev on your Brick]
+
+### Development version: Debian Stretch
+
+Debian Stretch for EV3Dev is not stable but it has new features to use.
+In the document link:http://www.ev3dev.org/downloads/[EV3Dev downloads] it is possible to download the latest
+stable version and some snapshots.
+
+WARNING: The snapshot used in the last version of this project is: link:https://oss.jfrog.org/list/oss-snapshot-local/org/ev3dev/brickstrap/2018-03-16/[2018-03-16].
+Current Debian Stretch support is for EV3 Brick only. If you have BrickPi or PiStorms, It is better if you use the classic
+Debian Jessie image at the moment.
+
+### Test the installation
+
+Once you have finished the process to install the EV3Dev image on your Brick, try to establish a remote `ssh` connection.
+Verify that your Brick has a connection in the same network than your computer
+
+[source]
+----
+ssh robot@192.168.1.104
+----
+
+And you should the following output
+
+[source]
+----
+The authenticity of host '10.0.1.2 (10.0.1.2)' can't be established.
+ECDSA key fingerprint is SHA256:21hHcnrpfwFMNaZcgeR9b5YnJw7q6Eojt0ZQM83Ephk.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.0.1.2' (ECDSA) to the list of known hosts.
+robot@10.0.1.2's password:
+             _____     _
+   _____   _|___ /  __| | _____   __
+  / _ \ \ / / |_ \ / _` |/ _ \ \ / /
+ |  __/\ V / ___) | (_| |  __/\ V /
+  \___| \_/ |____/ \__,_|\___| \_/
+
+Debian jessie on LEGO MINDSTORMS EV3!
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+----
+
+
+If you connected with your brick then you have completed this process and
+now you will have a Brick with a complete Linux distro to run any Programming language.
+
+TIP: Please, maintain your brick always updated.
+
+Execute the following commands before jump to the next step in this guide.
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo reboot now
+```
+
+*Now, you have Linux in your Brick!*
+
+## Java Virtual Machine
+
+Java programs need a JVM (Java Virtual Machine) installed in the Brick.
+Depending of the Hardware and the Debian version, you will have different options to install it.
+
+### EV3 Brick
+
+For EV3, it is possible to install the following JVM:
+
+- Open JDK 10 for Debian
+
+Using this project, the developer has 3 alternatives to install a JVM:
+
+- Manual
+- Using the project Installer
+- Using Gradle tasks from Template Project which interacts with Installer
+
+#### Manual
+
+Using the terminal, execute the following statements on a remote connection session from your EV3 Brick to
+install OpenJDK on your brick.
+
+```
+wget -N https://github.com/ev3dev-lang-java/openjdk-ev3/releases/download/v0.5.0/jri10-ev3.tar.gz
+sudo tar -zxvf jri10-ev3.tar.gz -C /opt
+mv /opt/jri-ev3/ /opt/jri-10-build-050
+update-alternatives --install /usr/bin/java java /opt/jri-10-build-050/bin/java 10
+```
+
+*Now, you have Java on your EV3 Brick!*
+
+#### Installer
+
+Using the terminal, execute the following statements on a remote connection session from your EV3 Brick to
+to execute the installer.
+
+
+```
+cd /home/robot
+mkdir installer
+cd installer
+wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/master/installer.sh
+chmod +x installer.sh
+sudo ./installer.sh help
+sudo ./installer.sh java
+```
+
+#### Gradle Template project
+
+The template project provides some Gradle tasks to interact with Installer project to install Java.
+The available tasks:
+
+- getInstaller
+- installJava
+- javaVersion
+
+### BrickPi 3 / BrickPi+ / PiStorms
+
+Bricks using Raspberry Pi hardware has more CPU/Memory capacity and it is possible to install from Debian Packages.
+
+WARNING: The project only offer support for Debian Jessie.
+
+#### Debian Jessie
+
+##### Manual
+
+Using the terminal, execute the following statements on a remote connection session from your Brick to
+install Oracle JRE 8 on your brick.
+
+```
+apt-key adv --recv-key --keyserver keyserver.ubuntu.com EEA14886
+echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
+echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+```
+
+##### Installer
+
+Using the terminal, execute the following statements on a remote connection session from your Brick to
+to execute the installer.
+
+```
+cd /home/robot
+mkdir installer
+cd installer
+wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/master/installer.sh
+chmod +x installer.sh
+sudo ./installer.sh help
+sudo ./installer.sh
+```
+
+##### Gradle Template project
+
+WARNING: This option is not available for Debian Jessie at the moment.
+
+### Test your installation
+
+Once you finish the JVM installation process, it is necessary to verify the installation.
+Execute the following statement to check that Java command is running in the right way.
+
+```
+java -version
+```
+
+*Now, your Brick is ready to run your Java programs.*
+
+## Next Step
+
+Continue in the section about link:create-your-first-project.html[Create your first project]
+
+++++
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+++++

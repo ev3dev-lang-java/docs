@@ -1,0 +1,43 @@
+# EV3 Ultrasonic Sensor
+
+## Introduction
+
+The digital EV3 Ultrasonic Sensor generates sound waves and reads their echoes to detect and measure distance from objects. It can also send single sound waves to work as sonar or listen for a sound wave that triggers the start of a program. Students could design a traffic-monitoring system and measure distances between vehicles, for instance. There is an opportunity to discover how the technology is used in everyday items like automatic doors, cars and manufacturing systems.
+
+* Measures distances between one and 250 cm
+* Front illumination is constant while emitting and blinks while listening
+
+image:./ev3_us_sensor.png[image]
+
+## How to use the sensor
+
+### Example to read distances
+
+[source,java]
+----
+include::./USSensorDemo.java[]
+----
+
+### Example to use the Listen Mode
+
+[source,java]
+----
+include::./USSensorDemo2.java[]
+----
+
+**References**
+
+https://shop.lego.com/en-GB/EV3-Ultrasonic-Sensor-45504
+
+++++
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+++++

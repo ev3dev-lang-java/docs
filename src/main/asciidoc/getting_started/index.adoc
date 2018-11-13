@@ -1,0 +1,73 @@
+# Getting Started
+
+## Introduction
+
+Learn or test a new Technology is always a new challenge.
+This section tries to reduce the time invested to install
+the componentes required on your Personal
+computer and the `Mindstorms Brick` to enjoy with the `Robots` that you will be create with `Java`.
+
+The project has been designed with the idea that the user creates Java programs in a Personal computer
+and later send the programs to any Mindstorms Brick with the help of remote connections.
+Following this approach, the user will learn the same techniques applied in the industry with Enterprise applications
+but in this case, applying the same techniques in a educational Robotics context with Java.
+
+## Software & Hardware requirements
+
+### Personal computer
+
+Modern development environments  always require the same stuff:
+
+- A package manager
+- Java JDK
+- Build Systems (Maven & Gradle)
+- Java IDE (IntelliJ or Eclipse)
+- Git & SourceTree
+
+A package manager to install software easily, a runtime about the technology,
+a build system to manage the dependencies and the whole software life cycle,
+integrated development environments and tools to store code in source code repositories.
+
+In the section about link:laptop.html[Getting started with your personal computer],
+you will learn how to install all components for the most popular Operating systems in the market:
+
+- Windows
+- OSX
+- Linux
+
+In order to develop software for Robots with Java.
+
+### Mindstorms Brick
+
+The Mindstorms Brick is the heart of this project. In the third generation of the product series LEGO Mindstorms,
+exist in the 3 market 3 possible Bricks compatible with this project:
+
+- LEGO Mindstorms EV3
+- BrickPi
+- PiStorms
+
+The requirements to execute Java programs in any Brick are the same that in any Personal computer:
+
+- Operating System
+- Java Virtual Machine
+
+In the section about link:brick.html[Getting started with your Brick],
+you will learn how to install the components.
+
+## Template project
+
+Exist a ready to use link:https://github.com/ev3dev-lang-java/template_project_gradle[Template project]
+which help you in the process to create new project with your favourite Java IDE. Review the
+document about link:create-your-first-project.html[Getting started with your first project] to learn
+how to use this Template project.
+
+.Maven Template project
+[NOTE]
+In the future, we will add a new Maven project with the same purpose.
+
+## The Next Step
+
+Continue with the next section about: link:../#fundamentals-of-robotics[Fundamentals of Robotics]
+
+but if you stopped in some point, read previous documents again and if the problem
+ continues, create a link:https://github.com/ev3dev-lang-java/ev3dev-lang-java/issues/[Support issue on the project].

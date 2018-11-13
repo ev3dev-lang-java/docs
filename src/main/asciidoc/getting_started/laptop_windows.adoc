@@ -1,0 +1,97 @@
+# Getting Started with your personal computer
+
+## The modern Java development environment for Windows
+
+#### Package manager
+
+[source]
+----
+PENDING
+----
+
+#### Java Virtual Machine
+
+To program with Java is necessary to install in your laptop a Java Development Kit (JDK).
+
+A Java Development Kit (JDK) is a program development environment
+for writing Java applications. It consists of a runtime environment that "sits on top" of the operating system layer
+as well as the tools and programming that developers need to compile, debug, and run applications
+written in the Java language.
+
+To begin using Java, it is necessary to install the JDK. Download latest JDK for windows
+link:http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html[here]
+
+
+Once you have installed Java JDK, check the installation:
+
+[source]
+----
+java -version
+----
+
+You should view the following output:
+
+[source]
+----
+java version "1.8.0_121"
+Java(TM) SE Runtime Environment (build 1.8.0_121-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
+----
+
+To check if you are able to compile Java files,
+create a new file with the name of `HelloWorld.java` and copy and paste on it the following content:
+
+[source,java]
+----
+include::./HelloWorld.java[]
+----
+
+Save the file and open in a terminal to type the following commands:
+
+``` java
+javac HelloWorld.java
+java HelloWorld
+```
+
+You should read: `HelloWorld` in the terminal.
+
+Further information about link:https://www.java.com/es/about/whatis_java.jsp[Java]
+
+#### Build Systems
+
+Modern Java development use dependencies stored on Software Repositories.
+It is a good idea if you install the popular build Systems as `Maven` & `Gradle` for Java.
+This project is modular and it deliver multiple dependencies.
+
+- link:https://maven.apache.org/install.html[How to install Maven on Windows]
+- link:https://docs.gradle.org/current/userguide/installation.html[How to install Gradle on Windows]
+
+Further information about link:https://maven.apache.org/[Maven] &amp; https://gradle.org/[Gradle].
+
+### Java IDE
+
+To develop a single Java file, maybe you could use a simple Text Editor
+but current Java IDE offers several funcionalities to
+help you in the process to develop software with Java. In the market, the most popular Java IDE are `IntelliJ` & `Eclipse`.
+
+Further information about link:https://www.jetbrains.com/idea/[IntelliJ] & link:http://www.eclipse.org/[Eclipse]
+
+### Source Control Management
+
+Git is a popular technology to manage code. Many ideas that you see on Internet are stored on
+Git repositories so manage this technology is necessary.
+
+Further information about link:https://www.sourcetreeapp.com/[SourceTree]
+
+++++
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+++++
