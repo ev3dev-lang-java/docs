@@ -34,7 +34,7 @@ asciidoctor {
     }
     attributes  'icons': 'font',
                 'title': project.name,
-                'revnumber': '0.8.0',
+                'revnumber': '2.4.16',
                 'toc': 'left',
                 'toc-title':'Table of Contents',
                 'encoding': 'utf-8',

@@ -21,7 +21,7 @@ A modern Java development environment require the following elements to be insta
 
 The software listed previously is possible to install manually but
 it is better the usage of a `package installer`
-like `HomeBrew` for OSX or `apt` for Linux.
+like `HomeBrew` `SDK` for OSX/Linux, `apt` for Linux or `Choco` for Windows.
 
 TIP: A package manager or package management system is a collection of software tools that automates the process of
 installing, upgrading, configuring, and removing computer programs for a computer's operating system
