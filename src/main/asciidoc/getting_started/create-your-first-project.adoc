@@ -11,14 +11,9 @@ The advantages of the usage of the Template project are:
  * Dependencies defined
  * Tasks defined to interact with the Brick
 
-WARNING: If you installed Debian Jessie on your Brick, use the branch Master of the repository
-link:https://github.com/ev3dev-lang-java/template_project_gradle/[https://github.com/ev3dev-lang-java/template_project_gradle/]
-but if you installed Debian Stretch on your Brick, use the branch develop of the repository
-link:https://github.com/ev3dev-lang-java/template_project_gradle/tree/develop[https://github.com/ev3dev-lang-java/template_project_gradle/tree/develop]
+Further information about `Template project` link:https://github.com/ev3dev-lang-java/template-project-gradle[here]
 
 ## Create your first project using the Gradle template project
-
-WARNING: The whole guide is designed for Debian Jessie
 
 ### Clone/Download the project in your computer
 
@@ -77,7 +72,7 @@ include::MyFirstRobot.java[]
 To deploy the example on your brick, open a `terminal` and type:
 
 ```
-./gradlew deployAndRun
+./gradlew deployAndBrickRun
 ```
 
 ### Add a new Java program
@@ -103,7 +98,7 @@ include::MANIFEST.MF[]
 To deploy the new example on your brick, open a `terminal` and type:
 
 ```
-./gradlew deployAndRun
+./gradlew deployAndBrickRun
 ```
 
 ## Create your first project from scratch
@@ -125,11 +120,11 @@ To start a new project with this library, add the following repository and depen
 <dependency>
     <groupId>com.github.ev3dev-lang-java</groupId>
     <artifactId>ev3dev-lang-java</artifactId>
-    <version>0.7.0</version>
+    <version>2.4.16</version>
 </dependency>
 ```
 	
-Further information about link:https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/0.7.0[the dependency]
+Further information about link:https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/2.4.16[the dependency]
 
 ## Playing with more examples
 
