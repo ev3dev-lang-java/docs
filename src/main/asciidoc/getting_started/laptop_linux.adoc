@@ -1,21 +1,20 @@
 # Getting Started with your personal computer
 
-## The modern Java development environment for OSX
+## The modern Java development environment for Linux
 
 If your personal computer is manufactured from Apple, the following instructions will help you.
 
 ### Package manager
 
-In OSX, you have excellent package managers like `HomeBrew` and `Sdkman`.
-Homebrew is a free and open-source software package management system that simplifies the installation of software
-on Apple's macOS operating system.
+In OSX, you have excellent package managers like `Apt` and `Sdkman`.
+APT (for Advanced Package Tool) is a set of tools for managing Debian packages.
 SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits on most Unix based systems.
 
 Using Homebrewl, we will install some packages and using Sdkman, we will install others.
 
 Once you have installed both, continue with the next section.
 
-- Further information about link:https://brew.sh/[Homebrew]
+- Further information about link:https://wiki.debian.org/Apt[Apt]
 - Further information about link:https://sdkman.io/[Sdkman]
 
 ### Java Virtual Machine
@@ -100,19 +99,10 @@ To develop a single Java file, maybe you could use a simple Text Editor
 but current Java IDE offers several funcionalities to
 help you in the process to develop software with Java. In the market, the most popular Java IDE are `IntelliJ` & `Eclipse`.
 
-To install `IntelliJ`:
+In Linux, it is better to install the IDE manually:
 
-[source]
-----
-brew cask install intellij-idea
-----
-
-To install `Eclipse`:
-
-[source]
-----
-brew cask install eclipse-java
-----
+- https://www.jetbrains.com/idea/download/
+- http://www.eclipse.org/downloads/
 
 Further information about link:https://www.jetbrains.com/idea/[IntelliJ] & link:http://www.eclipse.org/[Eclipse]
 
@@ -122,14 +112,6 @@ Git is a popular technology to manage code. Many ideas that you see on Internet 
 Git repositories so manage this technology is necessary.
 
 You could use the Version control features from link:https://www.jetbrains.com/help/idea/version-control-integration.html[IntelliJ]
-or use a dedicated tool like link:https://www.sourcetreeapp.com/[SourceTree]
-
-[source]
-----
-brew cask install sourcetree
-----
-
-Further information about link:https://www.sourcetreeapp.com/[SourceTree]
 
 ++++
 

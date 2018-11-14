@@ -32,7 +32,7 @@ Click in the Operating System installed in your personal computer to check the r
 
 - link:laptop_windows.html[Windows]
 - link:laptop_osx.html[OSX]
-- Linux
+- link:laptop_linux.html[Linux]
 
 ## Next step
 
