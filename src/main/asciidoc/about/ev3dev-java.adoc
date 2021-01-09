@@ -27,11 +27,11 @@ The project has been designed with the following solution in mind:
 [options="header,footer"]
 |===
 | Layer            | Option 1                                   | Option 2
-| Platforms        | EV3 BrickPi BrickPi3 PiStorms              | EV3
-| OS               | Debian Jessie                              | Debian Stretch
-| JVM              | Oracle JRE 8                               | OpenJDK JRI 10
-| EV3Dev Kernel    | 4.4.47-19-ev3dev-ev3 4.4.47-19-ev3dev-rpi2 | 4.9.58-ev3dev-1.6.0-ev3
-| ev3dev-lang-java | 0.7.0                                      | 2.3.0
+| Platforms        | BrickPi BrickPi3 PiStorms              | EV3
+| OS               | Debian Jessie                              | Debian Jessie/Stretch
+| JVM              | OpenJDK 11                               | OpenJDK JRI 11/12 ea
+| EV3Dev Kernel    | 4.4.47-19-ev3dev-ev3 4.4.47-19-ev3dev-rpi2 | 4.14.71-ev3dev-2.3.0-ev3
+| ev3dev-lang-java | 0.7.0                                      | 2.4.16
 |===
 
 **Note:** At the moment, the whole solution is scalable until the next `LEGO Mindstorms` product estimated
@@ -41,7 +41,7 @@ for next January of 2020.
 
 **Java features**
 
-* OpenJDK Java 10 support for EV3 Brick, Brickpi+/PiStorms + Raspberry Pi 3
+* OpenJDK Java 11/12 ea support for EV3 Brick, Brickpi+/PiStorms + Raspberry Pi 3
 * Java profiling tools Support (link:http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html[Oracle mission control] & link:http://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html[JConsole])
 * Logging support based on link:https://www.slf4j.org/[SLF4J]
 * Centralized logs with link:https://www.elastic.co/products/kibana[Kibana]
@@ -70,6 +70,7 @@ for next January of 2020.
 
 Stable projects:
 
+- link:https://github.com/ev3dev-lang-java/openjdk-ev3[OpenJDK for EV3]: A custom OpenJDK JRE build for EV3
 - link:https://github.com/ev3dev-lang-java/ev3dev-lang-java[EV3Dev-lang-java]: Low level interation with EV3Dev
 - link:https://github.com/ev3dev-lang-java/lejos-commons[lejos-commons]: LeJOS interfaces & utilities
 - link:https://github.com/ev3dev-lang-java/installer[Installer]: A set of Bash scripts to automate some operations with your brick
@@ -79,8 +80,6 @@ Stable projects:
 Incubator projects:
 
 - link:https://github.com/ev3dev-lang-java/lejos-navigation[lejos-navigation]: LeJOS navigation stack
-- link:https://github.com/ev3dev-lang-java/batteryMonitor[Battery Monitor]: A battery monitor to protect your hardware against low battery levels
-- link:https://github.com/ev3dev-lang-java/openjdk-ev3[OpenJDK for EV3]: A custom OpenJDK JRE build for EV3
 - link:https://github.com/ev3dev-lang-java/usb-devices[Usb Devices]: A library to use Arduino, Grove Sensors, GPS, IMU, LIDAR, and more devices...
 - link:https://github.com/ev3dev-lang-java/ros[ROS]: A library to publish Sensor data to ROS for SLAM purposes
 
@@ -88,6 +87,7 @@ Incubator projects:
 
 The competitive advantages of this project are:
 
+* Development Java robots with modern Java versions
 * Support for Multiple Bricks like EV3 Brick, BrickPi & PiStorms
 * Support for `USB` Connections for Sensors like 2D LIDARs, IMU & GPS & `Arduino` Boards
 * Usage of `LeJOS` interfaces
@@ -104,7 +104,7 @@ Computational consumption.
 | Element  | LEGO                                                                                     | Raspberry Pi 3 Model B+
 | Hardware | EV3 Brick                                                                                | BrickPi+  BrickPi3 PiStorms
 | SoC      | Sitara Processor AM1808                                                                  | Broadcom BCM2837 RISC de 64 bits
-| CPU      | ARM9 300MHz                                                                              | 4× ARM Cortex-A53, 1.4GHz
+| CPU      | ARM9 300MHz / 456 Mhz                                                                              | 4× ARM Cortex-A53, 1.4GHz
 | RAM      | 16KB of Instruction Cache,  16KB of Data Cache,  8KB of RAM (Vector Table),  64KB of ROM | 1GB LPDDR2 (900 MHz)
 | USB      | 1x                                                                                       | 4x
 | Year     | 2010                                                                                     | 2018
@@ -139,9 +139,9 @@ This premise was solved in every Mindstorms generation:
 |=======================
 |Product             | RCX               | NXT                           | EV3 + LeJOS                 | EV3/BrickPi/PiStorms + EV3Dev-lang-java
 |Runtime             | Custom firmware   | Custom firmware               | Busybox + Native libraries  | Debian Jessie/Stretch
-|JVM                 | Custom JVM        | Custom JVM                    | Oracle JRE 8                | OpenJDK 10
+|JVM                 | Custom JVM        | Custom JVM                    | Oracle JRE 8                | OpenJDK 11/12 ea
 |Robotics libraries  | Initial libraries | local-navigation, remote, ros | local-navigation, remote    | local-navigation
-|Last release        | 17/12/2006        | 03/02/2015                    | 16/11/2015                  | 23/04/2018
+|Last release        | 17/12/2006        | 03/02/2015                    | 16/11/2015                  | 13/11/2018
 |=======================
 
 ++++

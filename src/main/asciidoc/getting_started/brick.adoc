@@ -30,20 +30,22 @@ To install any Debian version, you will need to acquire a MicroSD Card to insert
 
 image:microsd.jpg[image]
 
-### Stable version: Debian Jessie
+### Debian Stretch (EV3)
 
 EV3Dev has an excellent step by step guide to install the Debian image in the Brick.
 Please, follow the link to link:http://www.ev3dev.org/docs/getting-started/[install EV3Dev on your Brick]
 
-### Development version: Debian Stretch
+#### Increase the CPU
 
-Debian Stretch for EV3Dev is not stable but it has new features to use.
-In the document link:http://www.ev3dev.org/downloads/[EV3Dev downloads] it is possible to download the latest
-stable version and some snapshots.
+Read the following article to increase the EV3 CPU:
+https://lechnology.com/2018/06/overclocking-lego-mindstorms-ev3-part-2/
 
-WARNING: The snapshot used in the last version of this project is: link:https://oss.jfrog.org/list/oss-snapshot-local/org/ev3dev/brickstrap/2018-03-16/[2018-03-16].
-Current Debian Stretch support is for EV3 Brick only. If you have BrickPi or PiStorms, It is better if you use the classic
-Debian Jessie image at the moment.
+It is possible to increase the CPU from 300Mhz to 456Mhz. You will observe a great performance improvement when you
+run your Java programs or when you use Apt.
+
+### Debian Jessie (BrickPi+/BrickPi3/PiStorms)
+
+If you have BrickPi or PiStorms, It is better if you use the classic Debian Jessie image at the moment.
 
 ### Test the installation
 
@@ -106,7 +108,7 @@ Depending of the Hardware and the Debian version, you will have different option
 
 For EV3, it is possible to install the following JVM:
 
-- Open JDK 10 for Debian
+- Open JDK 11 for Debian
 
 Using this project, the developer has 3 alternatives to install a JVM:
 
@@ -116,14 +118,17 @@ Using this project, the developer has 3 alternatives to install a JVM:
 
 #### Manual
 
+You can download the last OpenJDK build for EV3 from link:https://ci.adoptopenjdk.net/view/ev3dev/[AdoptOpenJDK CI]
+
 Using the terminal, execute the following statements on a remote connection session from your EV3 Brick to
 install OpenJDK on your brick.
 
 ```
-wget -N https://github.com/ev3dev-lang-java/openjdk-ev3/releases/download/v0.5.0/jri10-ev3.tar.gz
-sudo tar -zxvf jri10-ev3.tar.gz -C /opt
-mv /opt/jri-ev3/ /opt/jri-10-build-050
-update-alternatives --install /usr/bin/java java /opt/jri-10-build-050/bin/java 10
+wget -N https://ci.adoptopenjdk.net/view/ev3dev/job/openjdk11_build_ev3_linux/lastSuccessfulBuild/artifact/build/jri-ev3.tar.gz
+sudo tar -zxvf jri-ev3.tar.gz -C /opt
+mv /opt/jri-ev3/ /opt/jri-11
+update-alternatives --install /usr/bin/java java /opt/jri-11/bin/java 1011
+java -Xshare:dump
 ```
 
 *Now, you have Java on your EV3 Brick!*
@@ -147,6 +152,7 @@ sudo ./installer.sh java
 #### Gradle Template project
 
 The template project provides some Gradle tasks to interact with Installer project to install Java.
+
 The available tasks:
 
 - getInstaller
@@ -157,7 +163,7 @@ The available tasks:
 
 Bricks using Raspberry Pi hardware has more CPU/Memory capacity and it is possible to install from Debian Packages.
 
-WARNING: The project only offer support for Debian Jessie.
+WARNING: The project only offer support for Debian Jessie at the moment.
 
 #### Debian Jessie
 
@@ -172,6 +178,7 @@ echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | sudo t
 echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
+java -Xshare:dump
 ```
 
 ##### Installer
@@ -186,12 +193,18 @@ cd installer
 wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/master/installer.sh
 chmod +x installer.sh
 sudo ./installer.sh help
-sudo ./installer.sh
+sudo ./installer.sh java
 ```
 
 ##### Gradle Template project
 
-WARNING: This option is not available for Debian Jessie at the moment.
+The template project provides some Gradle tasks to interact with Installer project to install Java.
+
+The available tasks:
+
+- getInstaller
+- installJava
+- javaVersion
 
 ### Test your installation
 

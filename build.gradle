@@ -1,4 +1,3 @@
-
 plugins {
     id 'org.asciidoctor.convert' version '1.5.3'
     id 'org.kordamp.gradle.livereload' version '0.2.1'
@@ -35,7 +34,7 @@ asciidoctor {
     }
     attributes  'icons': 'font',
                 'title': project.name,
-                'revnumber': '0.8.0',
+                'revnumber': '2.4.16',
                 'toc': 'left',
                 'toc-title':'Table of Contents',
                 'encoding': 'utf-8',
@@ -55,4 +54,11 @@ defaultTasks 'asciidoctor'
 
 liveReload {
     docRoot asciidoctor.outputDir.canonicalPath
+}
+
+task serve << {
+    SimpleHttpFileServerFactory factory = new SimpleHttpFileServerFactory()
+    HttpFileServer server = factory.start(new File("./build/docs/html5"), 8080)
+    println("Server Started on 8080 ctrc+c to kill it")
+    java.lang.Thread.sleep(Long.MAX_VALUE);
 }

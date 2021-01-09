@@ -1,30 +1,23 @@
 # Getting Started with your personal computer
 
-## The modern Java development environment for Windows
+## The modern Java development environment for Linux
 
-#### Package manager
+If your personal computer is manufactured from Apple, the following instructions will help you.
 
-Windows has a popular package manager named link:https://chocolatey.org[Choco]. I recommend to read
-the link:https://chocolatey.org/docs/commands-reference[technical documentation] and install it.
+### Package manager
 
-To install openJDK in your computer with Choco, type:
+In OSX, you have excellent package managers like `Apt` and `Sdkman`.
+APT (for Advanced Package Tool) is a set of tools for managing Debian packages.
+SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits on most Unix based systems.
 
-[source]
-----
-choco install jdk8
-----
+Using Homebrewl, we will install some packages and using Sdkman, we will install others.
 
-WARNING: In the future, we will recommend the installation of OpenJDK 11, but at the moment, we detect an issue between OpenJDK
-& Gradle, so I prefer to recommend to install Java 8.
+Once you have installed both, continue with the next section.
 
-To install OpenJDK 11:
+- Further information about link:https://wiki.debian.org/Apt[Apt]
+- Further information about link:https://sdkman.io/[Sdkman]
 
-[source]
-----
-choco install openjdk
-----
-
-#### Java Virtual Machine
+### Java Virtual Machine
 
 To program with Java is necessary to install in your laptop a Java Development Kit (JDK).
 
@@ -32,6 +25,13 @@ A Java Development Kit (JDK) is a program development environment
 for writing Java applications. It consists of a runtime environment that "sits on top" of the operating system layer
 as well as the tools and programming that developers need to compile, debug, and run applications
 written in the Java language.
+
+To begin using Java, it is necessary to install the JDK:
+
+[source]
+----
+sdk install java
+----
 
 Once you have installed Java JDK, check the installation:
 
@@ -44,9 +44,9 @@ You should view the following output:
 
 [source]
 ----
-java version "1.8.0_181"
-Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
-Java HotSpot(TM) Client VM (build 25.181-b13, mixed mode)
+java version "1.8.0_121"
+Java(TM) SE Runtime Environment (build 1.8.0_121-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
 ----
 
 To check if you are able to compile Java files,
@@ -66,7 +66,15 @@ java HelloWorld
 
 You should read: `HelloWorld` in the terminal.
 
-Further information about link:https://openjdk.java.net/[OpenJDK]
+**Switching from one Java version to another one**
+
+Using `sdk`, it is very easy to switch from one Java version to another one. Check your JDK installed and package
+available in Sdk:
+
+``` java
+sdk list java
+sdk use java 10.0.1-open
+```
 
 #### Build Systems
 
@@ -74,12 +82,13 @@ Modern Java development use dependencies stored on Software Repositories.
 It is a good idea if you install the popular build Systems as `Maven` & `Gradle` for Java.
 This project is modular and it deliver multiple dependencies.
 
-Using choco, it is possible install Maven & Gradle easily:
+The way to install Maven & Gradle is:
+
 
 [source]
 ----
-choco install maven
-choco install gradle
+sdk install maven
+sdk install gradle
 ----
 
 Further information about link:https://maven.apache.org/[Maven] &amp; https://gradle.org/[Gradle].
@@ -90,11 +99,10 @@ To develop a single Java file, maybe you could use a simple Text Editor
 but current Java IDE offers several funcionalities to
 help you in the process to develop software with Java. In the market, the most popular Java IDE are `IntelliJ` & `Eclipse`.
 
-[source]
-----
-choco install intellijidea-community
-choco install eclipse
-----
+In Linux, it is better to install the IDE manually:
+
+- https://www.jetbrains.com/idea/download/
+- http://www.eclipse.org/downloads/
 
 Further information about link:https://www.jetbrains.com/idea/[IntelliJ] & link:http://www.eclipse.org/[Eclipse]
 
@@ -104,7 +112,6 @@ Git is a popular technology to manage code. Many ideas that you see on Internet 
 Git repositories so manage this technology is necessary.
 
 You could use the Version control features from link:https://www.jetbrains.com/help/idea/version-control-integration.html[IntelliJ]
-or use a dedicated tool like link:https://www.sourcetreeapp.com/[SourceTree]
 
 ++++
 
