@@ -11,10 +11,12 @@ asciidoctorj {
 }
 
 //Wrapper
+/*
 task wrapper(type: Wrapper) {
     description = 'Generates gradlew[.bat] scripts'
     gradleVersion = '4.7'
 }
+*/
 
 asciidoctor {
     description = project.description

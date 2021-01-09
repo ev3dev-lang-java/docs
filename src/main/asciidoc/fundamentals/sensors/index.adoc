@@ -22,6 +22,7 @@ The following sensors are designed to measure the environment.
 * link:ev3-ir-sensor/index.html[EV3 Infrared sensor]
 * link:ev3-touch-sensor/index.html[EV3 Touch sensor]
 * link:ev3-light-sensor/index.html[EV3 Light sensor]
+* link:nxt-temperature-sensor/index.html[NXT Temperature sensor]
 
 ### Proprioceptors sensors
 
@@ -64,6 +65,11 @@ This Lego Mindstorms Kit includes the following sensors:
 * link:battery/index.html[Battery Sensor]
 
 image:images/45544.png[image]
+
+### LEGO NXT Sensors
+
+* link:nxt-temperature-sensor/index.html[Temperature Sensor]
+
 
 ### Dexter Industries BrickPi
 
